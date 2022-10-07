@@ -1,10 +1,9 @@
-import {Section} from "./Styled"
+
 
 function App() {
   return (
     <div>      
-      Hello
-      <Section />
+
     </div>
   );
 }
