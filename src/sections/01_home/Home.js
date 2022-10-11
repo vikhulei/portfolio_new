@@ -12,11 +12,11 @@ const Home = () => {
                 <MyName>Victor Hulei</MyName>
             </ImageNameWrapper>
             <LargeHeadingHome>Web Developer</LargeHeadingHome>
-            <MainTextHome>I am passionate about web development and enjoy creating sites and applications.
+            <MainTextHome>I am passionate about web development and enjoy creating sites and applications
             </MainTextHome>
             <ButtonEmailWrapper>
                 <ButtonHome>Curriculum Vitae</ButtonHome>
-                <EmailHome>vikhulei@gmail.com</EmailHome>
+                <EmailHome href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</EmailHome>
             </ButtonEmailWrapper>
         </Wrapper>
     )

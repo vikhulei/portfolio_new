@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const LargeHeading = styled.h1 `
-    font-size: 3rem;
+    font-size: 7rem;
 `
 
 const RegularText = styled.p `
