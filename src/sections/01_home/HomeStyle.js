@@ -7,7 +7,7 @@ const {background, middle_light} = colors
 const Appear = keyframes `
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -20,7 +20,7 @@ const Wrapper = styled.div `
     margin 30px 0;
     padding: 0 40px;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,16 +33,12 @@ const ImageNameWrapper = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: ${Appear} 1s;
+    animation: ${Appear} 2s;
 `
 
-const MyImageContainer = styled.div `
+const MyImageContainer = styled.div ``
 
-`
-
-const MyImage = styled.img `
-
-`
+const MyImage = styled.img ``
 
 const MyName = styled.p `
     font-size: 1.3rem;
@@ -50,29 +46,29 @@ const MyName = styled.p `
     `
 
 const LargeHeadingHome = styled(LargeHeading) `
-    margin-top: 30px;
-    animation: ${Appear} 1s;
+    margin-top: 50px;
+    animation: ${Appear} 2s;
     `
 
 const MainTextHome = styled.p `
     font-size: 2.8rem;
     text-align: center;
-    margin-top: 20px;
-    animation: ${Appear} 1s;
+    margin-top: 50px;
+    animation: ${Appear} 2s;
 `
 
 const ButtonEmailWrapper = styled.div `
-    margin-top: 100px;
+    margin-top: 150px;
     width: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: ${Appear} 1s;
+    animation: ${Appear} 2s;
 `
 
 const ButtonHome = styled.button `
-    width: 250px;
-    height: 70px;
+    width: 300px;
+    height: 80px;
     border: none;
     border-radius: 10px;
     background-color: ${middle_light};
