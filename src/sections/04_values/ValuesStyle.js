@@ -18,9 +18,9 @@ const Heading = styled.h1 `
 
 const ValuesWrapper = styled.div `
     position: absolute;
-    height: 600px;
+    height: 500px;
     width: 85%;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -29,33 +29,47 @@ const ValuesWrapper = styled.div `
 
 const ValueContainer = styled.div `
     position: relative;
-    width: 400px;
+    width: 100%;
     height: 400px;
-    background-color: grey;
+    padding: 0 90px 0 30px;
     &:nth-child(1) {
-        border-right: lightgrey solid 4px;
-        margin-top: 200px;
-        transform: traslateY(100px);
+        margin-top: 120px;
+    }
+    &:nth-child(2) {
+        border-left: ${middle} solid 4px;
     }
     &:nth-child(3) {
-        border-left: lightgrey solid 4px;
-        margin-top: -200px;
-        transform: traslateY(100px);
+        border-left: ${middle} solid 4px;
+        margin-top: -120px;
     }
 `
 const ValueNameContainer = styled.div `
+    display: flex;
+    align-items: center;
 `
 
 const ValueNumber = styled.p `
-
-`
-
+    width: 50px;
+    height: 50px;
+    background-color: ${middle};
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.7rem;
+    `
+    
 const ValueName = styled.p `
-
+    margin-left: 20px;
+    font-size: 2.2rem;
+    font-weight: 900;
 `
 
-const ValueText = styled(RegularTextStyled) `
-
+const ValueText = styled.p `
+    margin-top: 30px;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.8;
 `
 
 const ValuesImageContainer = styled.div `

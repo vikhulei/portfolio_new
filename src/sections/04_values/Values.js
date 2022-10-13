@@ -13,7 +13,7 @@ const Values = () => {
           <ValueName>Communication</ValueName>
         </ValueNameContainer>
         <ValueText>
-          communication Text
+        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
         </ValueText>
         </ValueContainer>
         <ValueContainer>
@@ -22,7 +22,7 @@ const Values = () => {
           <ValueName>Dependability</ValueName>
         </ValueNameContainer>
         <ValueText>
-          Dependability Text
+        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
         </ValueText>
         </ValueContainer>
         <ValueContainer>
@@ -31,7 +31,7 @@ const Values = () => {
           <ValueName>Growth</ValueName>
         </ValueNameContainer>
         <ValueText>
-          Growth Text
+        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
         </ValueText>
         </ValueContainer>
       </ValuesWrapper>
