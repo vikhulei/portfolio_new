@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components"
 import { colors } from "../../components/ui/Colors"
-import { WrapperStyled, LargeHeading } from "../../components/ui/StyledComponents"
+import { WrapperStyled, LargeHeadingStyled } from "../../components/ui/StyledComponents"
 
 const {background, middle_light} = colors
 
@@ -38,7 +38,7 @@ const MyName = styled.p `
     opacity: 1;
     `
 
-const LargeHeadingHome = styled(LargeHeading) `
+const LargeHeadingHome = styled(LargeHeadingStyled) `
     margin-top: 50px;
     animation: ${Appear} 2s;
     `

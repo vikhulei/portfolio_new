@@ -11,7 +11,7 @@ const WrapperStyled = styled.div `
     align-items: center;
 `
 
-const LargeHeading = styled.h1 `
+const LargeHeadingStyled = styled.h1 `
     font-size: 10rem;
 `
 
@@ -19,4 +19,4 @@ const RegularTextStyled = styled.p `
     font-size: 2.3rem
 `
 
-export {WrapperStyled, LargeHeading, RegularTextStyled}
+export {WrapperStyled, LargeHeadingStyled, RegularTextStyled}
