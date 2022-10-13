@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components"
 import { colors } from "../../components/ui/Colors"
-import { LargeHeading } from "../../components/ui/StyledComponents"
+import { WrapperStyled, LargeHeading } from "../../components/ui/StyledComponents"
 
 const {background, middle_light} = colors
 
@@ -15,15 +15,8 @@ const Appear = keyframes `
     }
 `
 
-const Wrapper = styled.div `
-    position: relative;
-    margin 30px 0;
-    padding: 0 40px;
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+const Wrapper = styled(WrapperStyled) `
+    margin-top: 30px;
     background-color: ${background}
     `
 
@@ -55,6 +48,8 @@ const MainTextHome = styled.p `
     text-align: center;
     margin-top: 50px;
     animation: ${Appear} 2s;
+    max-width: 1200px;
+    // margin: 0 250px;
 `
 
 const ButtonEmailWrapper = styled.div `
