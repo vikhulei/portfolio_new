@@ -19,4 +19,23 @@ const RegularTextStyled = styled.p `
     font-size: 2.3rem
 `
 
-export {WrapperStyled, LargeHeadingStyled, RegularTextStyled}
+const LinkContainerStyled = styled.div `
+
+`
+const LinkTextContainerStyled = styled.div `
+
+`
+
+const LinkTextViewStyled = styled.p `
+
+`
+
+const LinkTextAddressStyled = styled.a `
+
+`
+
+const LinkIconStyled = styled.img `
+
+`
+
+export {WrapperStyled, LargeHeadingStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled }
