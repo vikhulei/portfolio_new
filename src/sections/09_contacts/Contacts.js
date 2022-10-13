@@ -1,9 +1,9 @@
-import {Wrapper} from "./BasedStyle"
+import {Wrapper} from "./ContactsStyle"
 
-const Based = () => {
+const Contacts = () => {
   return (
-    <Wrapper>Based</Wrapper>
+    <Wrapper>Contacts</Wrapper>
   )
 }
 
-export default Based
+export default Contacts

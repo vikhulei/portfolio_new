@@ -1,9 +1,9 @@
-import {Wrapper} from "./BasedStyle"
+import {Wrapper} from "./ProjectsStyle"
 
-const Based = () => {
+const Projects = () => {
   return (
-    <Wrapper>Based</Wrapper>
+    <Wrapper>Projects</Wrapper>
   )
 }
 
-export default Based
+export default Projects
