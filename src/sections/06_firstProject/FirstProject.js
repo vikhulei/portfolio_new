@@ -15,7 +15,7 @@ const FirstProject = () => {
           <Image src={ukraine} alt="image_safety" />
         </ImageContainer>
         <Description>
-        This is one of my first sites, made with pure HTML/CSS/JS. Created for my work at Peace Corps
+        This is one of my first sites, made with pure HTML/ CSS/JS. Created for my work at Peace Corps
         </Description>
       </ImageDescriptionWrapper>
       <LinksWrapper>
@@ -34,7 +34,7 @@ const FirstProject = () => {
           <IconImage src={githubpages} alt="githubpages_image" />
           <LinkTextContainer>
           <LinkTextView>
-          Run on GitHub pages
+          Run on GitHub Pages
           </LinkTextView>
           <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
           https://vikhulei.github.io/safety/index.html
