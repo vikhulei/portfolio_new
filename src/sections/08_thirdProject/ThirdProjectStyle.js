@@ -54,10 +54,10 @@ const LinksWrapper = styled.div `
     `
     const LinkTextContainer = styled(LinkTextContainerStyled) `
     // background-color: red;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // height: 90px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 `
 
 const LinkTextView = styled(LinkTextViewStyled) `

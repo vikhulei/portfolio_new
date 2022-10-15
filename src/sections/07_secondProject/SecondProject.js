@@ -18,7 +18,7 @@ const SecondProject = () => {
               View on GitHub
             </LinkTextView>
             <LinkTextAddress href="https://github.com/vikhulei/safety">
-              https://github.com/vikhulei/ safety
+              https://github.com/ vikhulei/ safety
             </LinkTextAddress>
           </LinkTextContainer>
 
@@ -32,7 +32,7 @@ const SecondProject = () => {
               Run on Surge platform
             </LinkTextView>
             <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
-              https://vikhulei.github.io/safety/ index.html
+              https://vikhulei.github.io/ safety/ index.html
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>

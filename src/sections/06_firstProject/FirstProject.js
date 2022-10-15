@@ -1,4 +1,4 @@
-import { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer } from "./FirstProjectStyle"
+import { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage } from "./FirstProjectStyle"
 import ukraine from "../../assets/ukraine.jpg"
 import github from "../../assets/icons/github.png"
 import githubpages from "../../assets/icons/githubpages.png"
@@ -42,7 +42,7 @@ const FirstProject = () => {
           </LinkTextContainer>
         </LinkContainer>
         <TechnologyImageContainer>
-          <IconImage src={html} alt="html_image" />
+          <TechnologyImage src={html} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
     </Wrapper>

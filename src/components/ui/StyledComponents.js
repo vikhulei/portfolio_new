@@ -19,24 +19,31 @@ const RegularTextStyled = styled.p `
 `
 
 const LinkContainerStyled = styled.div `
+    // width: 100%;
     display: flex;
     align-items: center;
 `
 const LinkTextContainerStyled = styled.div `
-    margin-left: 20px;
+    margin-left: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
 
 const LinkTextViewStyled = styled.p `
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    word-wrap: break-word;
 `
 
 const LinkTextAddressStyled = styled.a `
-font-size: 1.3rem;
+font-size: 1.1rem;
 `
 
 const LinkIconStyled = styled.img `
-    height: 100%;
+    // height: 100%;
+    // width: 100%;
 `
 
 export {WrapperStyled, LargeHeadingStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled }

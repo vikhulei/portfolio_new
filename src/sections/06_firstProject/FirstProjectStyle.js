@@ -7,7 +7,8 @@ const {light} = colors
 const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     background-color: ${light};
-    padding-bottom: 50px;
+    padding: 50px 0;
+    height: 900px;
 `
 const ImageDescriptionWrapper = styled.div `
     width: 100%;
@@ -18,7 +19,7 @@ const ImageDescriptionWrapper = styled.div `
 
 const ImageContainer = styled.div `
     position: relative;
-    width: 60%;
+    width: 55%;
 `
 
 const ImageText = styled.p `
@@ -39,7 +40,7 @@ const Image = styled.img `
 `
 
 const Description = styled(RegularTextStyled) `
-    width: 500px;
+    width: 35%;
     text-align: right;
     margin-right: 50px;
     font-size: 2.3rem;
@@ -52,7 +53,7 @@ const LinksWrapper = styled.div `
     display: flex;
     justify-content: space-between;
 `
-
+    
 const LinkContainer = styled(LinkContainerStyled) `
 
 `
@@ -69,14 +70,19 @@ const LinkTextAddress = styled(LinkTextAddressStyled) `
 `
 
 const IconImage = styled(LinkIconStyled) `
-
-`
-
-
+    height: 100%;
+    // width: 100%;
+    `
+    
 const TechnologyImageContainer = styled.div `
+    // background-color: red;
+    display: flex;
+    align-items: center;
+`
 
+const TechnologyImage = styled.img `
+    width: 100%;
 `
 
 
-
-export { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer }
+export { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage }
