@@ -2,17 +2,23 @@ import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, L
 import contactStore from "../../assets/contactStore.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
-import reactRouter from "../../assets/icons/reactRouter.png"
+import redux2 from "../../assets/icons/redux2.png"
 
 const ThirdProject = () => {
   return (
     <Wrapper>
+      <ImageDescriptionWrapper>
+        <ImageContainer>
+          <Image src={contactStore} alt="image_safety" />
+        </ImageContainer>
+        <Description>
+          This small website was created for an existing church in Kyiv. It has a landing page, a brief history, a schedule of services and a <em> Message-Us </em> page.
+        </Description>
+      </ImageDescriptionWrapper>
 
       <LinksWrapper>
-
         <LinkContainer>
           <IconImage src={github} alt="github_image" />
-
           <LinkTextContainer>
             <LinkTextView>
               View on GitHub
@@ -21,10 +27,7 @@ const ThirdProject = () => {
               https://github.com/vikhulei/ safety
             </LinkTextAddress>
           </LinkTextContainer>
-
         </LinkContainer>
-
-
         <LinkContainer>
           <IconImage src={surge} alt="githubpages_image" />
           <LinkTextContainer>
@@ -37,19 +40,9 @@ const ThirdProject = () => {
           </LinkTextContainer>
         </LinkContainer>
         <TechnologyImageContainer>
-          <IconImage src={reactRouter} alt="html_image" />
+          <IconImage src={redux2} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
-
-      <ImageDescriptionWrapper>
-        <ImageContainer>
-          <Image src={contactStore} alt="image_safety" />
-        </ImageContainer>
-        <Description>
-          This small website was created for an existing church in Kyiv. It has a landing page, a brief history, a schedule of services and a <em> Message-Us </em> page.
-        </Description>
-      </ImageDescriptionWrapper>
-
     </Wrapper>
   )
 }

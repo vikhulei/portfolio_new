@@ -2,23 +2,25 @@ import styled from "styled-components"
 import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/ui/StyledComponents"
 import { colors } from "../../components/ui/Colors"
 
-const {dark} = colors
+const {middle_light, dark} = colors
 
 const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
+    align-items: start;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding: 30px;
+    background-color: ${middle_light};
 `
 const ImageDescriptionWrapper = styled.div `
     width: 55%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     // background-color: red;
-`
-
+    `
+    
 const ImageContainer = styled.div `
     position: relative;
     width: 100%;
@@ -26,7 +28,7 @@ const ImageContainer = styled.div `
 
 const Image = styled.img `
     width: 100%;
-    height: 120%;
+    height: 100%;
     border-radius: 20px;
     object-fit: contain;
 `
@@ -34,7 +36,7 @@ const Image = styled.img `
 const Description = styled(RegularTextStyled) `
     width: 700px;
     text-align: center;
-    margin-top: 200px;
+    // margin-top: 200px;
     font-size: 2.3rem;
 `
 
@@ -54,7 +56,7 @@ const LinksWrapper = styled.div `
     `
     const LinkTextContainer = styled(LinkTextContainerStyled) `
     // background-color: red;
-    // height: 90px;
+    height: 75px;
     // display: flex;
     // flex-direction: column;
     // justify-content: space-between;
@@ -74,7 +76,7 @@ const IconImage = styled(LinkIconStyled) `
 
 
 const TechnologyImageContainer = styled.div `
-    height: 20%;
+    height: 22%;
 `
 
 
