@@ -15,6 +15,7 @@ const ImageDescriptionWrapper = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 `
 
 const ImageContainer = styled.div `
@@ -42,7 +43,6 @@ const Image = styled.img `
 const Description = styled(RegularTextStyled) `
     width: 35%;
     text-align: right;
-    margin-right: 50px;
     font-size: 2.3rem;
 `
 

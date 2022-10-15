@@ -54,7 +54,7 @@ const LinksWrapper = styled.div `
     `
     const LinkTextContainer = styled(LinkTextContainerStyled) `
     // background-color: red;
-    height: 90px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,7 +74,7 @@ const IconImage = styled(LinkIconStyled) `
 
 
 const TechnologyImageContainer = styled.div `
-    height: 20%;
+    height: 15%;
 `
 
 
