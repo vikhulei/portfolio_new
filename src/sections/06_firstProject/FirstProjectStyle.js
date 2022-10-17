@@ -9,6 +9,7 @@ const Wrapper = styled(WrapperStyled) `
     background-color: ${light};
     padding: 50px 0;
     height: 900px;
+
 `
 const ImageDescriptionWrapper = styled.div `
     width: 100%;
@@ -52,6 +53,10 @@ const LinksWrapper = styled.div `
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1250px) {
+        height: 200px;
+        flex-direction: column;
+    }
 `
     
 const LinkContainer = styled(LinkContainerStyled) `
@@ -71,13 +76,19 @@ const LinkTextAddress = styled(LinkTextAddressStyled) `
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;
-    // width: 100%;
+    @media screen and (max-width: 1250px) {
+        height: auto;
+        width: 10%;
+    }
     `
     
 const TechnologyImageContainer = styled.div `
     // background-color: red;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1250px) {
+        width: 30%;
+    }
 `
 
 const TechnologyImage = styled.img `

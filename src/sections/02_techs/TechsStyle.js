@@ -20,6 +20,11 @@ const ImagesWrapper = styled.div`
     grid-template-rows: 1fr 1fr;
     column-gap: 50px;
     row-gap: 50px;
+    @media screen and (max-width: 1250px) {
+        grid-template-columns: 0fr 2fr;
+        column-gap: 0px;
+        row-gap: 0px;
+    }
 `
 
 const ImageContainer = styled.div`
@@ -34,10 +39,10 @@ const LeftImage = styled(ImageContainer)`
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    `
-    // transition: 1s;
-    // opacity: ${(({showNotebook}) => showNotebook ? 1 : 0)};
-    // transform: translateY(${(({showNotebook}) => showNotebook ? "0px" : "100px")});
+    @media screen and (max-width: 1250px) {
+        display: none;
+    }
+`
     
 const TopImage = styled(ImageContainer)`
     grid-column-start: 2;
@@ -45,9 +50,6 @@ const TopImage = styled(ImageContainer)`
     grid-row-start: 1;
     grid-row-end: 2;
     `
-    // transition: 2s;
-    // opacity: ${(({showCode}) => showCode ? 1 : 0)};
-    // transform: translateY(${(({showCode}) => showCode ? "0px" : "100px")});
     
     const BottomImage = styled(ImageContainer)`
     grid-column-start: 2;
@@ -55,9 +57,6 @@ const TopImage = styled(ImageContainer)`
     grid-row-start: 2;
     grid-row-end: 3;
     `
-    // transition: 1s;
-    // opacity: ${(({showReact}) => showReact ? 1 : 0)};
-    // transform: translateY(${(({showReact}) => showReact ? "0px" : "100px")});
 
 const Image = styled.img`
     height: 100%;
@@ -72,6 +71,7 @@ const IconsWrapper = styled.div `
     align-items: end;
     transition: 3s;
     opacity: ${(({showIcons}) => showIcons ? 1 : 0)};
+    // opacity: 1;
     `
     
     const IconContainer = styled.div `

@@ -8,10 +8,20 @@ const WrapperStyled = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        margin: 0;
+    }
 `
 
 const LargeHeadingStyled = styled.h1 `
     font-size: 10rem;
+    @media screen and (max-width: 1250px) {
+        font-size: 6rem;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 8vw;
+    }
+    
 `
 
 const RegularTextStyled = styled.p `

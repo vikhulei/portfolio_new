@@ -32,7 +32,7 @@ const Image = styled.img `
 `
 
 const Description = styled(RegularTextStyled) `
-    width: 700px;
+    max-width: 700px;
     text-align: center;
     margin-top: 200px;
     font-size: 2.3rem;

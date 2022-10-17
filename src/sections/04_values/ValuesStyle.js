@@ -25,6 +25,12 @@ const ValuesWrapper = styled.div `
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1250px) {
+        top: 10%;
+        left: 10%;
+        transform: none;
+        flex-direction: column;
+    }
 `
 
 const ValueContainer = styled.div `
@@ -42,6 +48,7 @@ const ValueContainer = styled.div `
         border-left: ${middle} solid 4px;
         margin-top: -120px;
     }
+
 `
 const ValueNameContainer = styled.div `
     display: flex;
@@ -57,6 +64,9 @@ const ValueNumber = styled.p `
     border-radius: 50%;
     font-weight: 900;
     font-size: 1.7rem;
+    @media screen and (max-width: 1250px) {
+        font-size: 1.4rem;
+    }
     `
     
 const ValueName = styled.p `

@@ -15,6 +15,12 @@ const Heading = styled.h1 `
     text-align: left;
     width: 800px;
     font-size: 4rem;
+    @media screen and (max-width: 1250px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 1.5rem;
+    }
 `
 
 const RegularText = styled(RegularTextStyled) `

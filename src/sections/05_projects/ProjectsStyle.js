@@ -12,7 +12,7 @@ const LargeHeading = styled(LargeHeadingStyled) `
 
 const RegularText = styled(RegularTextStyled) `
     text-align: center;
-    width: 1000px;
+    max-width: 1000px;
     font-style: italic;
     line-height: 2;
 `
