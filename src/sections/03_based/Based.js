@@ -6,12 +6,6 @@ import equipment from "../../assets/equipment.png"
 const Based = () => {
     return (
         <Wrapper>
-            <MyImageContainer>
-                <MyImage
-                    src={myImage}
-                    alt="my image"
-                />
-            </MyImageContainer>
             <Heading>
                 Open to work remotly and on site
             </Heading>
@@ -24,6 +18,12 @@ const Based = () => {
                 src={equipment} alt="equipment"
                 />
             </EquimpentImageContainer>
+            <MyImageContainer>
+                <MyImage
+                    src={myImage}
+                    alt="my image"
+                />
+            </MyImageContainer>
         </Wrapper>
     )
 }

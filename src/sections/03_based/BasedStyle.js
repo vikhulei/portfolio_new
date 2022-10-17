@@ -9,29 +9,44 @@ const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     align-items: start;
     background-color: ${dark};
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+        align-items: stretch;
+    }
 `
 
 const Heading = styled.h1 `
     text-align: left;
-    width: 800px;
-    font-size: 4rem;
+    width: 70%;
+    max-width: 800px;
+    font-size: min(10vw, 4rem);
     @media screen and (max-width: 1250px) {
-        font-size: 2.5rem;
+        // font-size: 2.5rem;
     }
     @media screen and (max-width: 800px) {
-        font-size: 1.5rem;
+        margin: 10% 5%;
     }
 `
 
 const RegularText = styled(RegularTextStyled) `
-    margin-left: 100px;
+    font-size: min(6vw, 2.3rem);
+    margin-left: 10%;
     width: 70%;
     line-height: 1.7;
     z-index: 99;
+    @media screen and (max-width: 800px) {
+        margin: 0;
+        padding: 5%;
+        width: 100%;
+        text-align: justify;
+    }
 `
 
 const EquimpentImageContainer = styled.div `
     // margin-left: 100px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `
 
 const EquimpentImage = styled.img `
@@ -46,7 +61,11 @@ const MyImageContainer = styled.div `
     display: flex;
     justify-content: center;
     align-items: end;
-    background-color: ${light}
+    background-color: ${light};
+    @media screen and (max-width: 800px) {
+        position: static;
+        width: 100%;
+    }
 `
 
 const MyImage = styled.img `

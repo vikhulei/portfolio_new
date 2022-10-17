@@ -8,12 +8,15 @@ const Wrapper = styled(WrapperStyled) `
     margin: 0;
     padding: 0;
     align-items: start;
-    background-color: ${middle_light}
-`
-
-const Heading = styled.h1 `
-    font-size: 3.5rem;
+    background-color: ${middle_light};
+    `
+    
+    const Heading = styled.h1 `
+    font-size: min(10vw, 4rem);
     margin: 50px 0 0 50px;
+    @media screen and (max-width: 800px) {
+        margin-left: 10%;
+    }
 `
 
 const ValuesWrapper = styled.div `
@@ -25,11 +28,14 @@ const ValuesWrapper = styled.div `
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 1250px) {
-        top: 10%;
+    @media screen and (max-width: 800px) {
+        position: relative;
+        height: auto;
+        top: 2%;
         left: 10%;
-        transform: none;
+        transform: translate(0, 0);
         flex-direction: column;
+        width: 90%;
     }
 `
 
@@ -48,6 +54,14 @@ const ValueContainer = styled.div `
         border-left: ${middle} solid 4px;
         margin-top: -120px;
     }
+    &:nth-child(n) {
+        @media screen and (max-width: 800px) {
+            margin: 0;
+            padding: 0;
+            border: none;
+            height: auto;
+        }
+    }
 
 `
 const ValueNameContainer = styled.div `
@@ -64,8 +78,10 @@ const ValueNumber = styled.p `
     border-radius: 50%;
     font-weight: 900;
     font-size: 1.7rem;
-    @media screen and (max-width: 1250px) {
-        font-size: 1.4rem;
+    @media screen and (max-width: 800px) {
+        width: 37px;
+        height: 37px;
+        font-size: 1.3rem;
     }
     `
     
@@ -73,13 +89,20 @@ const ValueName = styled.p `
     margin-left: 20px;
     font-size: 2.2rem;
     font-weight: 900;
+    @media screen and (max-width: 800px) {
+        font-size: 1.7rem;
+    }
 `
 
 const ValueText = styled.p `
     margin-top: 30px;
-    font-size: 2rem;
+    font-size: min(5vw, 2rem);
     font-style: italic;
     line-height: 1.8;
+    @media screen and (max-width: 800px) {
+        margin: 10px 0 50px;
+        line-height: 1.5;
+    }
 `
 
 const ValuesImageContainer = styled.div `
@@ -88,6 +111,13 @@ const ValuesImageContainer = styled.div `
     width: 30%;
     right: 60px;
     bottom: 50px;
+    @media screen and (max-width: 800px) {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        align-self: center;
+        width: 70vw;
+    }
 `
 
 const ValuesImage = styled.img `

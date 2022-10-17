@@ -19,7 +19,7 @@ const Values = () => {
         <ValueContainer>
         <ValueNameContainer>
           <ValueNumber>2</ValueNumber>
-          <ValueName>Dependability</ValueName>
+          <ValueName>Reliablity</ValueName>
         </ValueNameContainer>
         <ValueText>
         Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
@@ -28,7 +28,9 @@ const Values = () => {
         <ValueContainer>
         <ValueNameContainer>
           <ValueNumber>3</ValueNumber>
-          <ValueName>Growth</ValueName>
+          <ValueName>
+            Development
+          </ValueName>
         </ValueNameContainer>
         <ValueText>
         Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
