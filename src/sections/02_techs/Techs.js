@@ -24,7 +24,7 @@ const Techs = () => {
   const reactRef = useRef(null)
   const iconsRef = useRef(null)
 
-  const showingPoint = (window.innerHeight - 150)
+  const showingPoint = (window.innerHeight - 100)
 
   const getwindowHeight = () => {
     const elementTop = elementName => elementName.getBoundingClientRect().top
