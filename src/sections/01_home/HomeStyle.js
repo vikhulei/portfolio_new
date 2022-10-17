@@ -25,7 +25,8 @@ const Wrapper = styled(WrapperStyled) `
     margin-top: 30px;
     animation: ${Appear} 2s;
     @media screen and (max-width: 800px) {
-        height: 80vh;
+        margin-top: 2.5vw;
+        height: 95vh;
     }
 `
 

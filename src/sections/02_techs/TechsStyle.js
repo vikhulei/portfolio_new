@@ -7,7 +7,7 @@ const { background, middle_light } = colors
 
 const Wrapper = styled(WrapperStyled) `
     padding: 0;
-    height: 1050px;
+    height: 990px;
     justify-content: space-between;
     // border: black solid 1px;
 `
@@ -71,7 +71,7 @@ const IconsWrapper = styled.div `
     align-items: end;
     transition: 3s;
     opacity: ${(({showIcons}) => showIcons ? 1 : 0)};
-    // opacity: 1;
+
     `
     
     const IconContainer = styled.div `
