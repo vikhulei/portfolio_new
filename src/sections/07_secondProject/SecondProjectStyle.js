@@ -8,15 +8,26 @@ const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     flex-direction: row;
     padding-bottom: 50px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: space-around;
+        height: 800px;
+    }
 `
 const ImageDescriptionWrapper = styled.div `
     width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
-    // background-color: red;
+    @media screen and (max-width: 800px) {
+        height: 350px;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
 `
 
 const ImageContainer = styled.div `
@@ -35,7 +46,11 @@ const Description = styled(RegularTextStyled) `
     max-width: 700px;
     text-align: center;
     margin-top: 200px;
-    font-size: 2.3rem;
+    font-size: min(5.5vw, 2.3rem);
+    @media screen and (max-width: 800px) {
+        margin: 0px;
+        width: 90%;
+    }
 `
 
 const LinksWrapper = styled.div `
@@ -47,17 +62,24 @@ const LinksWrapper = styled.div `
     justify-content: space-between;
     align-items: center;
     background-color: ${middle};
+    @media screen and (max-width: 800px) {
+        height: 250px;
+        width: 100%;
+        padding: 5% 10%;
+    }
     `
     
     const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;
     `
     const LinkTextContainer = styled(LinkTextContainerStyled) `
-    // background-color: red;
     height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+        height: auto;
+    }
 `
 
 const LinkTextView = styled(LinkTextViewStyled) `
@@ -70,13 +92,25 @@ const LinkTextAddress = styled(LinkTextAddressStyled) `
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;
+    @media screen and (max-width: 1250px) {
+        height: auto;
+        width: 10%;
+    }
 `
 
 
 const TechnologyImageContainer = styled.div `
     height: 15%;
+    @media screen and (max-width: 800px) {
+        height: 25%;
+        // width: 100%;
+    }
+`
+
+const TechnologyImage = styled.img `
+    height: 100%
 `
 
 
 
-export { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer }
+export { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage }

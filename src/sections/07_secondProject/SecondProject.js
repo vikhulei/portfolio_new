@@ -1,4 +1,4 @@
-import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer } from "./SecondProjectStyle"
+import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage } from "./SecondProjectStyle"
 import church from "../../assets/church.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
@@ -37,7 +37,7 @@ const SecondProject = () => {
           </LinkTextContainer>
         </LinkContainer>
         <TechnologyImageContainer>
-          <IconImage src={reactRouter} alt="html_image" />
+          <TechnologyImage src={reactRouter} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
 
