@@ -10,11 +10,13 @@ const Wrapper = styled(WrapperStyled) `
     padding-bottom: 50px;
 
     @media screen and (max-width: 800px) {
+        
         flex-direction: column-reverse;
         padding: 0;
-        justify-content: space-between;
-        height: 650px;
-        margin: 50px 0;
+        justify-content: left;
+        height: 610px;
+        margin-bottom: 50px;
+        // background-color: red;
     }
 `
 const ImageDescriptionWrapper = styled.div `
@@ -24,21 +26,22 @@ const ImageDescriptionWrapper = styled.div `
     flex-direction: column;
     align-items: center;
     @media screen and (max-width: 800px) {
-        height: 330px;
+        // height: 330px;
         width: 100%;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: left;
     }
 `
 
 const ImageContainer = styled.div `
     position: relative;
     width: 100%;
+    height: 200px;
 `
 
 const Image = styled.img `
     width: 100%;
-    height: 120%;
+    height: 110%;
     border-radius: 20px;
     object-fit: cover;
 `
@@ -49,7 +52,7 @@ const Description = styled(RegularTextStyled) `
     margin-top: 200px;
     font-size: min(5.5vw, 2.3rem);
     @media screen and (max-width: 800px) {
-        margin: 0px;
+        margin: 0 0 20px 0;
         width: 90%;
     }
 `
@@ -64,9 +67,11 @@ const LinksWrapper = styled.div `
     align-items: center;
     background-color: ${middle};
     @media screen and (max-width: 800px) {
-        height: 250px;
+        justify-content: left;
+        height: 220px;
         width: 100%;
         padding: 0 10% 5%;
+        border-radius: 20px;
     }
     `
     

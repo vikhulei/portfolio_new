@@ -12,10 +12,11 @@ const Wrapper = styled(WrapperStyled) `
     background-color: ${middle_light};
     @media screen and (max-width: 800px) {
         flex-direction: column;
-        padding: 20px 0 0 0;
-        justify-content: space-between;
+        padding: 0;
+        justify-content: left;
         height: 650px;
-        margin: 50px 0;
+        margin-bottom: 50px;
+        border-radius: 20px;
     }
 
 `
@@ -30,7 +31,7 @@ const ImageDescriptionWrapper = styled.div `
         height: 350px;
         width: 100%;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: left;
     }
     `
     
@@ -43,7 +44,6 @@ const Image = styled.img `
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    object-fit: contain;
 `
 
 const Description = styled(RegularTextStyled) `

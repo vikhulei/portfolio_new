@@ -10,6 +10,7 @@ const Wrapper = styled(WrapperStyled)`
     padding: 50px 0;
     height: 900px;
     @media screen and (max-width: 800px) {
+        margin: 0 0 50px 0;
         padding: 0;
         height: 600px;
         border-radius: 20px;
