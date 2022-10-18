@@ -42,13 +42,14 @@ const LinkTextContainerStyled = styled.div `
 `
 
 const LinkTextViewStyled = styled.p `
-    font-size: 1.3rem;
+    font-size: min(4vw, 1.3rem);
     font-weight: bold;
     word-wrap: break-word;
 `
 
 const LinkTextAddressStyled = styled.a `
-font-size: 1.1rem;
+    font-size: min(3.5vw, 1.1rem);
+    word-wrap: brake-word;
 `
 
 const LinkIconStyled = styled.img `
