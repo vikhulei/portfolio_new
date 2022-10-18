@@ -8,10 +8,13 @@ const {middle} = colors;
 const Wrapper = styled(WrapperStyled) `
     height: 400px;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+        height: 300px;
+    }
 `
 
 const LargeHeading = styled(LargeHeadingStyled) `
-    font-size: 8rem;
+    font-size: min(10vw, 8rem);
 `
 
 const Footer = styled.div `
@@ -23,6 +26,11 @@ const Footer = styled.div `
     justify-content: space-between;
     align-items: center;
     line-height: 1.5;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: 220px;
+        padding: 5% 80px;
+    }
 `
 
 const CopyrightNameContainer = styled.div `
