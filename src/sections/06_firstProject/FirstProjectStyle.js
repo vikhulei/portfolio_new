@@ -11,8 +11,9 @@ const Wrapper = styled(WrapperStyled)`
     height: 900px;
     @media screen and (max-width: 800px) {
         padding: 0;
-        height: 700px;
-        justify-content: space-around;
+        height: 600px;
+        border-radius: 20px;
+        justify-content: left;
     }
 `
 const ImageDescriptionWrapper = styled.div`
@@ -22,9 +23,10 @@ const ImageDescriptionWrapper = styled.div`
     align-items: center;
     padding: 0 30px;
     @media screen and (max-width: 800px) {
+        justify-content: left;
         padding: 0;
         flex-direction: column;
-        height: 55%;
+        margin-bottom: 50px;
     }
     `
 
@@ -33,6 +35,7 @@ const ImageContainer = styled.div`
     width: 55%;
     @media screen and (max-width: 800px) {
         width: 100%;
+        margin-bottom: 50px;
     }
     `
     
@@ -59,8 +62,7 @@ const ImageContainer = styled.div`
     @media screen and (max-width: 800px) {
         width: 90%;
         text-align: center;
-    }
-    
+    }  
 `
 
 const LinksWrapper = styled.div`
@@ -70,7 +72,7 @@ const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1250px) {
-        height: 200px;
+        height: 150px;
         width: 80%;
         flex-direction: column;
         padding: 0;

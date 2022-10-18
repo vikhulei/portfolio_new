@@ -5,7 +5,7 @@ const Wrapper = styled(WrapperStyled) `
     height: 400px;
     justify-content: space-between;
     @media screen and (max-width: 800px) {
-        height: 300px;
+        height: 250px;
         justify-content: space-evenly;
     }
 `
