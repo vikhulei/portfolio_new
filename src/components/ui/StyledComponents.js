@@ -14,12 +14,12 @@ const WrapperStyled = styled.div `
 `
 
 const LargeHeadingStyled = styled.h1 `
-    font-size: 10rem;
+    font-size: min(12vw, 10rem);
     @media screen and (max-width: 1250px) {
-        font-size: 6rem;
+        // font-size: 6rem;
     }
     @media screen and (max-width: 800px) {
-        font-size: 8vw;
+        // font-size: 8vw;
     }
     
 `
