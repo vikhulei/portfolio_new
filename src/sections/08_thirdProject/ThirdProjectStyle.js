@@ -28,16 +28,20 @@ const ImageDescriptionWrapper = styled.div `
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: 800px) {
-        height: 350px;
+        // height: 350px;
         width: 100%;
         flex-direction: column;
         justify-content: left;
+        margin-bottom: 50px;
     }
     `
     
 const ImageContainer = styled.div `
     position: relative;
     width: 100%;
+    @media screen and (max-width: 800px) {
+        margin: 0 0 50px 0;
+    }
 `
 
 const Image = styled.img `
@@ -51,7 +55,7 @@ const Description = styled(RegularTextStyled) `
     text-align: center;
     font-size: min(5.5vw, 2.3rem);
     @media screen and (max-width: 800px) {
-        margin: 0px;
+        margin: 0;
         width: 90%;
     }
 `
@@ -66,9 +70,11 @@ const LinksWrapper = styled.div `
     align-items: center;
     background-color: ${dark};
     @media screen and (max-width: 800px) {
-        height: 250px;
+        height: 220px;
         width: 100%;
         padding: 0 10% 5%;
+        border-radius: 20px;
+        margin: 0;
     }
     `
     
