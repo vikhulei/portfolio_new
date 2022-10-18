@@ -1,4 +1,4 @@
-import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer } from "./ThirdProjectStyle"
+import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage } from "./ThirdProjectStyle"
 import contactStore from "../../assets/contactStore.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
@@ -40,7 +40,7 @@ const ThirdProject = () => {
           </LinkTextContainer>
         </LinkContainer>
         <TechnologyImageContainer>
-          <IconImage src={redux2} alt="html_image" />
+          <TechnologyImage src={redux2} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
     </Wrapper>

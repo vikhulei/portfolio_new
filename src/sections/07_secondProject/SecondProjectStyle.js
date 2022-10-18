@@ -104,7 +104,6 @@ const TechnologyImageContainer = styled.div `
     height: 15%;
     @media screen and (max-width: 800px) {
         height: 25%;
-        // width: 100%;
     }
 `
 
