@@ -12,8 +12,9 @@ const Wrapper = styled(WrapperStyled) `
     @media screen and (max-width: 800px) {
         flex-direction: column-reverse;
         padding: 0;
-        justify-content: space-around;
-        height: 800px;
+        justify-content: space-between;
+        height: 650px;
+        margin: 50px 0;
     }
 `
 const ImageDescriptionWrapper = styled.div `
@@ -23,7 +24,7 @@ const ImageDescriptionWrapper = styled.div `
     flex-direction: column;
     align-items: center;
     @media screen and (max-width: 800px) {
-        height: 350px;
+        height: 330px;
         width: 100%;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -65,7 +66,7 @@ const LinksWrapper = styled.div `
     @media screen and (max-width: 800px) {
         height: 250px;
         width: 100%;
-        padding: 5% 10%;
+        padding: 0 10% 5%;
     }
     `
     
