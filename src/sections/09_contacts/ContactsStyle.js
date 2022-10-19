@@ -15,6 +15,9 @@ const Wrapper = styled(WrapperStyled) `
 
 const LargeHeading = styled(LargeHeadingStyled) `
     font-size: min(10vw, 8rem);
+    @media screen and (max-width: 1100px) {
+        margin-bottom: 50px;
+    }
 `
 
 const Footer = styled.div `
