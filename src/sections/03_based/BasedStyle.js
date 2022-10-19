@@ -46,8 +46,8 @@ const RegularText = styled(RegularTextStyled) `
 
 const EquimpentImageContainer = styled.div `
     width: 25vw;
-    @media screen and (max-width: 800px) {
-        display: none;
+    @media screen and (max-width: 1000px) {
+        visibility: hidden;
     }
 `
 
