@@ -8,13 +8,12 @@ const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     flex-direction: row;
     padding-bottom: 50px;
-
-    @media screen and (max-width: 800px) {
-        
+    @media screen and (max-width: 1100px) {
         flex-direction: column-reverse;
         padding: 0;
         justify-content: left;
         height: 610px;
+        height: fit-content;
         margin-bottom: 50px;
         // background-color: red;
     }
@@ -25,8 +24,7 @@ const ImageDescriptionWrapper = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 800px) {
-        // height: 330px;
+    @media screen and (max-width: 1100px) {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: left;
@@ -36,7 +34,7 @@ const ImageDescriptionWrapper = styled.div `
 const ImageContainer = styled.div `
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 50%;
 `
 
 const Image = styled.img `
@@ -50,8 +48,8 @@ const Description = styled(RegularTextStyled) `
     max-width: 700px;
     text-align: center;
     margin-top: 200px;
-    font-size: min(5.5vw, 2.3rem);
-    @media screen and (max-width: 800px) {
+    font-size: min(5vw, 2.3rem);
+    @media screen and (max-width: 1100px) {
         margin: 0 0 20px 0;
         width: 90%;
     }
@@ -66,9 +64,10 @@ const LinksWrapper = styled.div `
     justify-content: space-between;
     align-items: center;
     background-color: ${middle};
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         justify-content: left;
-        height: 220px;
+        height: 45vw;
+        max-height: 300px;
         width: 100%;
         padding: 0 10% 5%;
         border-radius: 20px;
@@ -83,7 +82,7 @@ const LinksWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         height: auto;
     }
 `
@@ -98,7 +97,7 @@ const LinkTextAddress = styled(LinkTextAddressStyled) `
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 800px) {
         height: auto;
         width: 10%;
     }

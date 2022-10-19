@@ -32,7 +32,7 @@ const SecondProject = () => {
               Run on Surge platform
             </LinkTextView>
             <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
-              https://vikhulei.github.io/ safety/ index.html
+              https://vikhulei. github. io/ safety/ index.html
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>

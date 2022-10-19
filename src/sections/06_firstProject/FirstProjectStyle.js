@@ -75,7 +75,8 @@ const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1100px) {
-        height: 30vh;
+        height: 45vw;
+        max-height: 300px;
         width: fit-content;
         flex-direction: column;
         justify-content: space-between;
