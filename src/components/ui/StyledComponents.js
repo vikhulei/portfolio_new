@@ -29,7 +29,7 @@ const RegularTextStyled = styled.p `
 `
 
 const LinkContainerStyled = styled.div `
-    // width: 100%;
+    // width: fit-content;
     display: flex;
     align-items: center;
 `

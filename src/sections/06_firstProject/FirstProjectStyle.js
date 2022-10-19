@@ -9,10 +9,12 @@ const Wrapper = styled(WrapperStyled)`
     background-color: ${light};
     padding: 50px 0;
     height: 900px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         margin: 0 0 50px 0;
-        padding: 0;
-        height: 600px;
+        padding: 0 0 50px 0;
+        // overflow: auto;
+        height: fit-content;
+        // height: 1200px;
         border-radius: 20px;
         justify-content: left;
     }
@@ -23,7 +25,7 @@ const ImageDescriptionWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         justify-content: left;
         padding: 0;
         flex-direction: column;
@@ -34,7 +36,7 @@ const ImageDescriptionWrapper = styled.div`
 const ImageContainer = styled.div`
     position: relative;
     width: 55%;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         width: 100%;
         margin-bottom: 50px;
     }
@@ -60,7 +62,7 @@ const ImageContainer = styled.div`
     width: 35%;
     text-align: right;
     font-size: min(5.5vw, 2.3rem);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         width: 90%;
         text-align: center;
     }  
@@ -72,15 +74,25 @@ const LinksWrapper = styled.div`
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 1250px) {
-        height: 150px;
-        width: 80%;
+    @media screen and (max-width: 1100px) {
+        height: 30vh;
+        width: fit-content;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         padding: 0;
     }
+    // @media screen and (max-width: 500px) {
+    //     height: 30vh;
+    // }
 `
 
 const LinkContainer = styled(LinkContainerStyled)`
+@media screen and (max-width: 1100px) {
+    width: 100%;
+    // margin-left: 50%;
+    // transform: translateX(-50%);
+}
 `
 const LinkTextContainer = styled(LinkTextContainerStyled)`
     height: auto;
@@ -96,18 +108,18 @@ const LinkTextAddress = styled(LinkTextAddressStyled)`
 
 const IconImage = styled(LinkIconStyled)`
     height: 100%;
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1100px) {
         height: auto;
-        width: 10%;
+        width: 60px;
     }
     `
 
 const TechnologyImageContainer = styled.div`
-    // background-color: red;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 1250px) {
-        width: 30%;
+    @media screen and (max-width: 1100px) {
+        // margin-top: 20px;
+        width: 170px;
     }
     @media screen and (max-width: 800px) {
         align-self: center;
