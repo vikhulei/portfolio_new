@@ -9,6 +9,9 @@ const Wrapper = styled(WrapperStyled) `
     padding: 0;
     align-items: start;
     background-color: ${middle_light};
+    @media screen and (max-width: 1400px) {
+        height: fit-content;
+    }
 `
     
     const Heading = styled.h1 `
@@ -28,10 +31,10 @@ const ValuesWrapper = styled.div `
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1400px) {
         position: relative;
         height: auto;
-        top: 2%;
+        margin-top: 5%;
         left: 10%;
         transform: translate(0, 0);
         flex-direction: column;
@@ -55,11 +58,15 @@ const ValueContainer = styled.div `
         margin-top: -120px;
     }
     &:nth-child(n) {
+        @media screen and (max-width: 1400px) {
+            margin: 0;
+            padding: 30px;
+            border: none;
+            height: auto;
+        }
         @media screen and (max-width: 800px) {
             margin: 0;
             padding: 0;
-            border: none;
-            height: auto;
         }
     }
 
@@ -111,8 +118,9 @@ const ValuesImageContainer = styled.div `
     width: 30%;
     right: 60px;
     bottom: 50px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1400px) {
         position: relative;
+        margin-top: 5%;
         right: 0;
         bottom: 0;
         align-self: center;
