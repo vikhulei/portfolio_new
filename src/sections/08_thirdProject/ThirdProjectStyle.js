@@ -109,7 +109,7 @@ const IconImage = styled(LinkIconStyled) `
 const TechnologyImageContainer = styled.div `
     height: 22%;
     @media screen and (max-width: 1100px) {
-        max-height: 70px;
+        max-height: 100px;
         height: 10vh;
     }
 `
