@@ -2,12 +2,13 @@ import styled from "styled-components"
 import { WrapperStyled, LargeHeadingStyled, RegularTextStyled } from "../../components/ui/StyledComponents"
 
 const Wrapper = styled(WrapperStyled) `
-    height: 400px;
-    justify-content: space-between;
-    @media screen and (max-width: 800px) {
-        height: 250px;
-        justify-content: space-evenly;
-    }
+    // height: 400px;
+    // justify-content: space-between;
+    // @media screen and (max-width: 800px) {
+        height: fit-content;
+        justify-content: space-between;
+        padding: 50px 0;
+    
 `
 
 const LargeHeading = styled(LargeHeadingStyled) `
