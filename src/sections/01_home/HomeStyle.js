@@ -37,15 +37,12 @@ const ImageNameWrapper = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    // animation: ${Appear} 2s;
 `
 
 const MyImageContainer = styled.div `
     width: 40%;
     max-width: 200px;
     margin-right: 20px;
-    // background-color: red;
-
 `
 
 const MyImage = styled.img `
@@ -55,19 +52,19 @@ const MyImage = styled.img `
 const MyName = styled.p `
     font-size: min(6vw, 3rem);
     opacity: 1;
-    `
+`
 
 const LargeHeadingHome = styled(LargeHeadingStyled) `
     margin-top: 50px;
-    // animation: ${Appear} 2s;
-    `
+`
 
 const MainTextHome = styled.p `
     font-size: min(5vw, 2.8rem);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10vh;
+    width: 85vw;
     max-width: 1200px;
-    line-height: 2;
+    line-height: 1.5;
 `
 
 const ButtonEmailWrapper = styled.div `
@@ -78,8 +75,9 @@ const ButtonEmailWrapper = styled.div `
     align-items: center;
     @media screen and (max-width: 800px) {
         flex-direction: column;
-        margin-top: 100px;
-        height: 15%;
+        margin-top: 10vh;
+        bottom: 10px;
+        height: 10vh;
     }
 `
 
