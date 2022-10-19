@@ -21,14 +21,15 @@ const LargeHeading = styled(LargeHeadingStyled) `
 `
 
 const Footer = styled.div `
-    background-color: ${middle};
     width: 100%;
     height: 180px;
+    margin-bottom: 5vh;
     padding: 0 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     line-height: 1.5;
+    background-color: ${middle};
     @media screen and (max-width: 1100px) {
         flex-direction: column;
         height: 220px;
