@@ -12,10 +12,8 @@ const Wrapper = styled(WrapperStyled) `
         flex-direction: column-reverse;
         padding: 0;
         justify-content: left;
-        height: 610px;
         height: fit-content;
         margin-bottom: 50px;
-        // background-color: red;
     }
 `
 const ImageDescriptionWrapper = styled.div `
@@ -66,10 +64,11 @@ const LinksWrapper = styled.div `
     background-color: ${middle};
     @media screen and (max-width: 1100px) {
         justify-content: left;
-        height: 45vw;
+        height: 45%;
         max-height: 300px;
         width: 100%;
         padding: 0 10% 5%;
+        margin-top: 20px;
         border-radius: 20px;
     }
     `
@@ -97,22 +96,25 @@ const LinkTextAddress = styled(LinkTextAddressStyled) `
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
         height: auto;
-        width: 10%;
+        width: 70px;
     }
 `
 
 
 const TechnologyImageContainer = styled.div `
     height: 15%;
-    @media screen and (max-width: 800px) {
-        height: 25%;
+    @media screen and (max-width: 1100px) {
+        max-height: 50px;
+        height: 10vh;
+        // width: 15%;
     }
 `
 
 const TechnologyImage = styled.img `
     height: 100%
+    // width: 100%;
 `
 
 
