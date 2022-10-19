@@ -12,6 +12,8 @@ const Wrapper = styled(WrapperStyled) `
     @media screen and (max-width: 800px) {
         padding: 10px;
         align-items: stretch;
+        height: 1500px;
+        height: auto;
     }
 `
 
@@ -43,14 +45,14 @@ const RegularText = styled(RegularTextStyled) `
 `
 
 const EquimpentImageContainer = styled.div `
-    // margin-left: 100px;
+    width: 25vw;
     @media screen and (max-width: 800px) {
         display: none;
     }
 `
 
 const EquimpentImage = styled.img `
-
+    width: 100%;
 `
 const MyImageContainer = styled.div `
     position: absolute;
@@ -65,6 +67,7 @@ const MyImageContainer = styled.div `
     @media screen and (max-width: 800px) {
         position: static;
         width: 100%;
+        height: 100vw;
     }
 `
 

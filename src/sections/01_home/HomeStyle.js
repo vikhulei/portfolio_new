@@ -61,7 +61,7 @@ const LargeHeadingHome = styled(LargeHeadingStyled) `
 const MainTextHome = styled.p `
     font-size: min(5vw, 2.8rem);
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
     width: 85vw;
     max-width: 1200px;
     line-height: 1.5;
@@ -74,9 +74,10 @@ const ButtonEmailWrapper = styled.div `
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: 800px) {
+        position: absolute;
         flex-direction: column;
-        margin-top: 10vh;
-        bottom: 10px;
+        bottom: 10vh;
+        margin-top: 0;
         height: 10vh;
     }
 `

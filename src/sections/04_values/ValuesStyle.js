@@ -9,7 +9,7 @@ const Wrapper = styled(WrapperStyled) `
     padding: 0;
     align-items: start;
     background-color: ${middle_light};
-    `
+`
     
     const Heading = styled.h1 `
     font-size: min(10vw, 4rem);
