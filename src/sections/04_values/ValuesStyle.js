@@ -119,7 +119,7 @@ const ValuesImageContainer = styled.div `
     right: 60px;
     bottom: 50px;
     transition: 2s;
-    transform: translateX(${(({showAnimation}) => showAnimation ? "0px" : "40vw")});
+    transform: translateX(${(({showAnimation}) => showAnimation ? "0px" : "120%")});
     @media screen and (max-width: 1400px) {
         position: relative;
         margin-top: 5%;
