@@ -54,7 +54,7 @@ const Values = () => {
           </ValueName>
         </ValueNameContainer>
         <ValueText>
-        Never-ending process of gaining new skills and experience that helps reach next goals in professional development. An absolute truth for coding!
+        Never-ending process of gaining new skills and experience... an absolute truth for coding!
         </ValueText>
         </ValueContainer>
       </ValuesWrapper>

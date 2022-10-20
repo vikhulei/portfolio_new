@@ -6,13 +6,13 @@ const {middle} = colors;
 
 const ScaleHeading = keyframes `
     0% {transform: scale(1); opacity: 0}
-    40% {transform: scale(1.15); opacity: 1}
-    80% {transform: scale(0.95); opacity: 1}
+    40% {transform: scale(1.25); opacity: 1}
+    // 80% {transform: scale(0.95); opacity: 1}
     100% {transform: scale(1); opacity: 1}
 `
 
 const Animation = css `
-    animation: 2s ease-in ${ScaleHeading}
+    animation: 3s ${ScaleHeading}
 `
 
 const Wrapper = styled(WrapperStyled) `

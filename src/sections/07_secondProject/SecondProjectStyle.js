@@ -7,12 +7,10 @@ const {background, middle} = colors
 const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     flex-direction: row;
-    // padding-bottom: 50px;
     background-color: ${background};
-    border-radius: 20px;
     @media screen and (max-width: 1100px) {
+        border-radius: 20px;
         flex-direction: column-reverse;
-        padding: 0;
         justify-content: left;
         height: fit-content;
         margin-bottom: 50px;
@@ -35,6 +33,9 @@ const ImageContainer = styled.div `
     position: relative;
     width: 100%;
     height: 50%;
+    @media screen and (max-width: 1100px) {
+        margin-bottom: 30px;
+    }    
 `
 
 const Image = styled.img `
@@ -50,7 +51,7 @@ const Description = styled(RegularTextStyled) `
     margin-top: 200px;
     font-size: min(5vw, 2.3rem);
     @media screen and (max-width: 1100px) {
-        margin: 0 0 20px 0;
+        margin: 40px 0;
         width: 90%;
     }
 `
@@ -66,6 +67,7 @@ const LinksWrapper = styled.div `
     background-color: ${middle};
     @media screen and (max-width: 1100px) {
         justify-content: left;
+        align-items: start;
         height: 45%;
         max-height: 300px;
         width: 100%;
@@ -75,10 +77,16 @@ const LinksWrapper = styled.div `
     }
     `
     
-    const LinkContainer = styled(LinkContainerStyled) `
+const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;
-    `
-    const LinkTextContainer = styled(LinkTextContainerStyled) `
+    @media screen and (max-width: 1100px) {
+        margin-left: 25%;
+    }    
+    @media screen and (max-width: 600px) {
+        margin-left: 15%;
+    }     
+`
+const LinkTextContainer = styled(LinkTextContainerStyled) `
     height: 75px;
     display: flex;
     flex-direction: column;
@@ -110,6 +118,7 @@ const TechnologyImageContainer = styled.div `
     @media screen and (max-width: 1100px) {
         max-height: 50px;
         height: 10vh;
+        align-self: center;
     }
 `
 

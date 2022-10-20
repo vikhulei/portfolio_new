@@ -25,7 +25,7 @@ const Wrapper = styled(WrapperStyled) `
 const ValuesWrapper = styled.div `
     position: absolute;
     height: 500px;
-    width: 85%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,13 +45,14 @@ const ValuesWrapper = styled.div `
 const ValueContainer = styled.div `
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     padding: 0 90px 0 30px;
     &:nth-child(1) {
         margin-top: 120px;
     }
     &:nth-child(2) {
         border-left: ${middle} solid 4px;
+        height: 500px;
     }
     &:nth-child(3) {
         border-left: ${middle} solid 4px;
@@ -103,7 +104,7 @@ const ValueName = styled.p `
 
 const ValueText = styled.p `
     margin-top: 30px;
-    font-size: min(5vw, 2rem);
+    font-size: min(4vw, 2rem);
     font-style: italic;
     line-height: 1.8;
     @media screen and (max-width: 800px) {

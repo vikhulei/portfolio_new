@@ -39,7 +39,7 @@ const ImageContainer = styled.div `
     position: relative;
     width: 100%;
     @media screen and (max-width: 1100px) {
-        margin: 0 0 50px 0;
+        margin: 0 0 30px 0;
     }
 `
 
@@ -67,7 +67,7 @@ const LinksWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     background-color: ${dark};
     @media screen and (max-width: 1100px) {
         justify-content: left;
@@ -75,15 +75,21 @@ const LinksWrapper = styled.div `
         max-height: 350px;
         width: 100%;
         padding: 3% 10% 5%;
-        margin-top: 20px;
+        margin-top: 0px;
         border-radius: 20px;
     }
     `
     
-    const LinkContainer = styled(LinkContainerStyled) `
+const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;
-    `
-    const LinkTextContainer = styled(LinkTextContainerStyled) `
+    @media screen and (max-width: 1100px) {
+        margin-left: 25%;
+    }    
+    @media screen and (max-width: 600px) {
+        margin-left: 15%;
+    }    
+`
+const LinkTextContainer = styled(LinkTextContainerStyled) `
     height: 75px;
     @media screen and (max-width: 1100px) {
         height: auto;
@@ -109,6 +115,7 @@ const IconImage = styled(LinkIconStyled) `
 
 const TechnologyImageContainer = styled.div `
     height: 22%;
+    align-self: center;
     @media screen and (max-width: 1100px) {
         max-height: 100px;
         height: 10vh;

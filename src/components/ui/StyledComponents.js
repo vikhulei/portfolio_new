@@ -38,7 +38,7 @@ const LinkTextContainerStyled = styled.div `
     height: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
 `
 
 const LinkTextViewStyled = styled.p `
@@ -50,6 +50,7 @@ const LinkTextViewStyled = styled.p `
 const LinkTextAddressStyled = styled.a `
     font-size: min(3.5vw, 1.1rem);
     word-wrap: brake-word;
+    margin-top: 10px;
 `
 
 const LinkIconStyled = styled.img `
