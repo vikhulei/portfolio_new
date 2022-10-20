@@ -1,11 +1,21 @@
-import styled from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { WrapperStyled, RegularTextStyled } from "../../components/ui/StyledComponents"
 import {colors} from "../../components/ui/Colors"
 
 const {dark, light} = colors
 
+const EquipmentTransition = keyframes `
+    0% {transform: translateX(-50vw)}
+    70% {transform: translateX(3vw)}
+    100% {transform: translateX(0vw)}
+`
+
+const Animation = css `
+    animation: 2s ${EquipmentTransition}
+`
+
 const Wrapper = styled(WrapperStyled) `
-    padding: 80px 80px;
+    padding: 80px 80px 50px;
     justify-content: space-between;
     align-items: start;
     background-color: ${dark};
@@ -42,12 +52,16 @@ const RegularText = styled(RegularTextStyled) `
 
 const EquimpentImageContainer = styled.div `
     width: 25vw;
+    margin-top: 30px;
+    transition: 1s;
+    ${(({showAnimation}) => showAnimation ? Animation : "")};
+    visibility: ${(({showAnimation}) => showAnimation ? "visible" : "hidden")} ;
     @media screen and (max-width: 1000px) {
         visibility: hidden;
     }
-`
-
-const EquimpentImage = styled.img `
+    `
+    
+    const EquimpentImage = styled.img `
     width: 100%;
 `
 const MyImageContainer = styled.div `

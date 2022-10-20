@@ -19,7 +19,7 @@ const Techs = () => {
   
   const {showingPoint, elementTop} = showingPointFunction
   
-  const getwindowHeight = () => {
+  const animateIcons = () => {
     const iconsPos = elementTop(iconsRef.current)
     if (iconsPos < showingPoint()) {
       setShowAnimation(true)
@@ -27,8 +27,8 @@ const Techs = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", getwindowHeight)
-    return () => window.removeEventListener("scroll", getwindowHeight)
+    window.addEventListener("scroll", animateIcons)
+    return () => window.removeEventListener("scroll", animateIcons)
   }, [])
 
   return (
