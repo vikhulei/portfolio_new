@@ -9,24 +9,20 @@ import git from "../../assets/icons/git.png"
 import html from "../../assets/icons/html.png"
 import redux from "../../assets/icons/redux.png"
 import styled from "../../assets/icons/styled.png"
+import { showingPointFunction } from "../../util/showingPointFunction"
 
 const Techs = () => {
 
-  const [showAnimation, setShowAnimation] = useState({
-    notebook: false,
-    code: false,
-    react: false,
-    icons: false,
-  })
+  const [showAnimation, setShowAnimation] = useState(false)
 
   const iconsRef = useRef(null)
   
+  const {showingPoint, elementTop} = showingPointFunction
+  
   const getwindowHeight = () => {
-    const showingPoint = (window.innerHeight - (window.innerHeight*20/100))
-    const elementTop = elementName => elementName.getBoundingClientRect().top
     const iconsPos = elementTop(iconsRef.current)
-    if (iconsPos < showingPoint) {
-      setShowAnimation(prev => ({ ...prev, icons: true }))
+    if (iconsPos < showingPoint()) {
+      setShowAnimation(true)
     }
   }
 
@@ -38,30 +34,24 @@ const Techs = () => {
   return (
     <Wrapper>
       <ImagesWrapper>
-        <LeftImage
-          showNotebook={showAnimation.notebook}
-        >
+        <LeftImage>
           <Image
             src={notebook}
             alt="notebook" />
         </LeftImage>
-        <TopImage
-          showCode={showAnimation.code}
-        >
+        <TopImage>
           <Image
             src={code}
             alt="code" />
         </TopImage>
-        <BottomImage
-          showReact={showAnimation.react}
-          >
+        <BottomImage>
           <Image
             src={react}
             alt="react" />
         </BottomImage>
       </ImagesWrapper>
       <IconsWrapper
-        showIcons={showAnimation.icons}
+        showIcons={showAnimation}
         ref={iconsRef}
         >
         <IconContainer

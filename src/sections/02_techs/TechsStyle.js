@@ -73,8 +73,9 @@ const IconsWrapper = styled.div `
     display: flex;
     justify-content: space-around;
     align-items: end;
-    transition: 2s;
+    transition: 0.5s;
     opacity: ${(({showIcons}) => showIcons ? 1 : 0)};
+    transform: translateY(${(({showIcons}) => showIcons ? "0px" : "50px")});
 
     `
     
