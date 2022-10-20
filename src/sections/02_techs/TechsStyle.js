@@ -20,10 +20,14 @@ const ImagesWrapper = styled.div`
     grid-template-rows: 1fr 1fr;
     column-gap: 50px;
     row-gap: 50px;
+    margin-bottom: 50px;
     @media screen and (max-width: 1250px) {
         grid-template-columns: 0fr 2fr;
         column-gap: 0px;
         row-gap: 0px;
+    }
+    @media screen and (max-width: 800px) {
+        margin-bottom: 5px;
     }
 `
 
@@ -69,7 +73,7 @@ const IconsWrapper = styled.div `
     display: flex;
     justify-content: space-around;
     align-items: end;
-    transition: 3s;
+    transition: 2s;
     opacity: ${(({showIcons}) => showIcons ? 1 : 0)};
 
     `

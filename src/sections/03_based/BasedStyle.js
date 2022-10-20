@@ -12,7 +12,6 @@ const Wrapper = styled(WrapperStyled) `
     @media screen and (max-width: 800px) {
         padding: 10px;
         align-items: stretch;
-        height: 1500px;
         height: auto;
     }
 `
