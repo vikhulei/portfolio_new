@@ -34,7 +34,7 @@ const Values = () => {
           <ValueName>Communication</ValueName>
         </ValueNameContainer>
         <ValueText>
-        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
+        The ability to collaborate with one another  is especially important in case of remote or hybrid work.
         </ValueText>
         </ValueContainer>
         <ValueContainer>
@@ -43,18 +43,18 @@ const Values = () => {
           <ValueName>Reliablity</ValueName>
         </ValueNameContainer>
         <ValueText>
-        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
+        Following through on commitments and deadlines is a way that people know that they can trust and depend on me.
         </ValueText>
         </ValueContainer>
         <ValueContainer>
         <ValueNameContainer>
           <ValueNumber>3</ValueNumber>
           <ValueName>
-            Development
+            Growth
           </ValueName>
         </ValueNameContainer>
         <ValueText>
-        Let’s have a look at some of my projects. You may review the code on GitHub or run the site on Surge platform
+        Never-ending process of gaining new skills and experience that helps reach next goals in professional development. An absolute truth for coding!
         </ValueText>
         </ValueContainer>
       </ValuesWrapper>

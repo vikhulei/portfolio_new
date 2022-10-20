@@ -17,8 +17,8 @@ const SecondProject = () => {
             <LinkTextView>
               View on GitHub
             </LinkTextView>
-            <LinkTextAddress href="https://github.com/vikhulei/safety">
-              https://github.com/ vikhulei/ safety
+            <LinkTextAddress href="https://github.com/vikhulei/bethany_church">
+            https://github.com/ vikhulei/ bethany_church
             </LinkTextAddress>
           </LinkTextContainer>
 
@@ -26,13 +26,13 @@ const SecondProject = () => {
 
 
         <LinkContainer>
-          <IconImage src={surge} alt="githubpages_image" />
+          <IconImage src={surge} alt="githubpages_image"/>
           <LinkTextContainer>
             <LinkTextView>
               Run on Surge platform
             </LinkTextView>
-            <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
-              https://vikhulei. github. io/ safety/ index.html
+            <LinkTextAddress href="https://bethanynivki.surge.sh/">
+            https://bethanynivki. surge. sh/
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>

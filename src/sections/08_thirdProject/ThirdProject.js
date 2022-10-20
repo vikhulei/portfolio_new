@@ -12,7 +12,7 @@ const ThirdProject = () => {
           <Image src={contactStore} alt="image_safety" />
         </ImageContainer>
         <Description>
-          This small website was created for an existing church in Kyiv. It has a landing page, a brief history, a schedule of services and a <em> Message-Us </em> page.
+        This is contact management application with authentication and the options to view, create, update and delete the contacts. The password is <em>Pa$$word</em>, of course &#128513;
         </Description>
       </ImageDescriptionWrapper>
 
@@ -23,8 +23,8 @@ const ThirdProject = () => {
             <LinkTextView>
               View on GitHub
             </LinkTextView>
-            <LinkTextAddress href="https://github.com/vikhulei/safety">
-              https://github.com/vikhulei/ safety
+            <LinkTextAddress href="https://github.com/vikhulei/contact_store_v2">
+            https://github.com/ vikhulei/ contact_store_v2
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>
@@ -34,8 +34,8 @@ const ThirdProject = () => {
             <LinkTextView>
               Run on Surge platform
             </LinkTextView>
-            <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
-              https://vikhulei.github.io/safety/ index.html
+            <LinkTextAddress href="http://contactstore.surge.sh/">
+            http://contactstore. surge. sh
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>

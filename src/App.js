@@ -18,9 +18,9 @@ function App() {
       <Based />
       <Values />
       <Projects />
-      <FirstProject />
-      <SecondProject />
       <ThirdProject />
+      <SecondProject />
+      <FirstProject />
       <Contacts />
     </div>
   );
