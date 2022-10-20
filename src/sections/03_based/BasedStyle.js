@@ -21,9 +21,6 @@ const Heading = styled.h1 `
     width: 70%;
     max-width: 800px;
     font-size: min(10vw, 4rem);
-    @media screen and (max-width: 1250px) {
-        // font-size: 2.5rem;
-    }
     @media screen and (max-width: 800px) {
         margin: 10% 5%;
     }

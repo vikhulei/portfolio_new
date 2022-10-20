@@ -19,29 +19,12 @@ const Techs = () => {
     icons: false,
   })
 
-  const notebookRef = useRef(null)
-  const codeRef = useRef(null)
-  const reactRef = useRef(null)
   const iconsRef = useRef(null)
-
-  const showingPoint = (window.innerHeight - (window.innerHeight*20/100))
-
+  
   const getwindowHeight = () => {
+    const showingPoint = (window.innerHeight - (window.innerHeight*20/100))
     const elementTop = elementName => elementName.getBoundingClientRect().top
-    const notebookPos = elementTop(notebookRef.current)
-    const codePos = elementTop(codeRef.current)
-    const reactPos = elementTop(reactRef.current)
     const iconsPos = elementTop(iconsRef.current)
-
-    if (notebookPos < showingPoint) {
-      setShowAnimation(prev => ({ ...prev, notebook: true }))
-    }
-    if (codePos < showingPoint) {
-      setShowAnimation(prev => ({ ...prev, code: true }))
-    }
-    if (reactPos < showingPoint) {
-      setShowAnimation(prev => ({ ...prev, react: true }))
-    }
     if (iconsPos < showingPoint) {
       setShowAnimation(prev => ({ ...prev, icons: true }))
     }
@@ -60,14 +43,12 @@ const Techs = () => {
         >
           <Image
             src={notebook}
-            ref={notebookRef}
             alt="notebook" />
         </LeftImage>
         <TopImage
           showCode={showAnimation.code}
         >
           <Image
-            ref={codeRef}
             src={code}
             alt="code" />
         </TopImage>
@@ -75,7 +56,6 @@ const Techs = () => {
           showReact={showAnimation.react}
           >
           <Image
-            ref={reactRef}
             src={react}
             alt="react" />
         </BottomImage>
