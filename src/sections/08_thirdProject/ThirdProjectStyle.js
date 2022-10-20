@@ -51,6 +51,7 @@ const Image = styled.img `
 
 const Description = styled(RegularTextStyled) `
     width: 50vw;
+    max-width: 700px;
     text-align: center;
     font-size: min(4.5vw, 2.3rem);
     @media screen and (max-width: 1100px) {
