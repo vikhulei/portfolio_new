@@ -15,7 +15,8 @@ const Animation = css `
 `
 
 const Wrapper = styled(WrapperStyled) `
-    height: 400px;
+    margin: 0px;
+    height: fit-content;
     justify-content: space-between;
     @media screen and (max-width: 1100px) {
         height: fit-content;
@@ -24,6 +25,7 @@ const Wrapper = styled(WrapperStyled) `
 
 const LargeHeading = styled(LargeHeadingStyled) `
     font-size: min(10vw, 8rem);
+    margin-bottom: 100px;
     transition: 3s;
     visibility: ${(({showAnimation}) => showAnimation ? "visible" : "hidden")};
     ${(({showAnimation}) => showAnimation ? Animation : "")};
