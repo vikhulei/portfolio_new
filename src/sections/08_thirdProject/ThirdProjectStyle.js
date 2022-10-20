@@ -2,122 +2,134 @@ import styled from "styled-components"
 import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/ui/StyledComponents"
 import { colors } from "../../components/ui/Colors"
 
-const {middle_light, dark} = colors
+const { light } = colors
 
-const Wrapper = styled(WrapperStyled) `
+const Wrapper = styled(WrapperStyled)`
     justify-content: space-between;
-    align-items: start;
-    flex-direction: row;
-    padding: 30px;
-    background-color: ${middle_light};
-    @media screen and (max-width: 1100px) {
-        flex-direction: column;
-        padding: 0;
-        justify-content: left;
-        height: fit-content;
-        margin-bottom: 50px;
-        border-radius: 20px;
-    }
-
-`
-const ImageDescriptionWrapper = styled.div `
-    width: 55%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width: 1100px) {
-        width: 100%;
-        flex-direction: column;
-        justify-content: left;
-        margin-bottom: 50px;
-    }
-    `
-    
-const ImageContainer = styled.div `
-    position: relative;
-    width: 100%;
+    background-color: ${light};
+    padding: 50px 0;
+    height: 900px;
     @media screen and (max-width: 1100px) {
         margin: 0 0 50px 0;
+        padding: 0 0 50px 0;
+        // overflow: auto;
+        height: fit-content;
+        // height: 1200px;
+        border-radius: 20px;
+        justify-content: left;
     }
 `
-
-const Image = styled.img `
+const ImageDescriptionWrapper = styled.div`
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-`
-
-const Description = styled(RegularTextStyled) `
-    width: 50vw;
-    max-width: 700px;
-    text-align: center;
-    font-size: min(4.5vw, 2.3rem);
-    @media screen and (max-width: 1100px) {
-        margin: 0;
-        width: 90%;
-    }
-`
-
-const LinksWrapper = styled.div `
-    height: 100%;
-    width: 35%;
-    padding: 100px 50px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: ${dark};
+    padding: 0 30px;
     @media screen and (max-width: 1100px) {
         justify-content: left;
-        height: 50%;
-        max-height: 350px;
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    `
+
+const ImageContainer = styled.div`
+    position: relative;
+    width: 55%;
+    @media screen and (max-width: 1100px) {
         width: 100%;
-        padding: 3% 10% 5%;
-        margin-top: 20px;
-        border-radius: 20px;
+        margin-bottom: 50px;
     }
     `
     
-    const LinkContainer = styled(LinkContainerStyled) `
-    height: 100px;
-    `
-    const LinkTextContainer = styled(LinkTextContainerStyled) `
-    height: 75px;
-    @media screen and (max-width: 1100px) {
-        height: auto;
-    }
-`
-
-const LinkTextView = styled(LinkTextViewStyled) `
+    const ImageText = styled.p`
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 300px;
     color: white;
+    font-size: min(10vw, 4rem);
+    font-style: italic;
+    `
+    
+    const Image = styled.img`
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+    `
+    
+    const Description = styled(RegularTextStyled)`
+    width: 35%;
+    text-align: right;
+    font-size: min(5.5vw, 2.3rem);
+    @media screen and (max-width: 1100px) {
+        width: 90%;
+        text-align: center;
+    }  
 `
 
-const LinkTextAddress = styled(LinkTextAddressStyled) `
+const LinksWrapper = styled.div`
+    height: 100px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1100px) {
+        height: 45vw;
+        max-height: 300px;
+        width: fit-content;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    // @media screen and (max-width: 500px) {
+    //     height: 30vh;
+    // }
+`
+
+const LinkContainer = styled(LinkContainerStyled)`
+@media screen and (max-width: 1100px) {
+    width: 100%;
+    // margin-left: 50%;
+    // transform: translateX(-50%);
+}
+`
+const LinkTextContainer = styled(LinkTextContainerStyled)`
+    height: auto;
+`
+
+const LinkTextView = styled(LinkTextViewStyled)`
+
+`
+    
+const LinkTextAddress = styled(LinkTextAddressStyled)`
 
 `
 
-const IconImage = styled(LinkIconStyled) `
+const IconImage = styled(LinkIconStyled)`
     height: 100%;
     @media screen and (max-width: 1100px) {
         height: auto;
-        width: 70px;
+        width: 60px;
     }
-`
+    `
 
-
-const TechnologyImageContainer = styled.div `
-    height: 22%;
+const TechnologyImageContainer = styled.div`
+    display: flex;
+    align-items: center;
     @media screen and (max-width: 1100px) {
-        max-height: 100px;
-        height: 10vh;
+        // margin-top: 20px;
+        width: 170px;
+    }
+    @media screen and (max-width: 800px) {
+        align-self: center;
     }
 `
 
-const TechnologyImage = styled.img `
-    height: 100%
+const TechnologyImage = styled.img`
+    width: 100%;
 `
 
 
-export { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage }
+export { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage }

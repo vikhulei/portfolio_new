@@ -2,12 +2,14 @@ import styled from "styled-components"
 import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/ui/StyledComponents"
 import { colors } from "../../components/ui/Colors"
 
-const {middle} = colors
+const {background, middle} = colors
 
 const Wrapper = styled(WrapperStyled) `
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
+    background-color: ${background};
+    border-radius: 20px;
     @media screen and (max-width: 1100px) {
         flex-direction: column-reverse;
         padding: 0;
