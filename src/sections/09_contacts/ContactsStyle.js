@@ -1,9 +1,18 @@
-import styled from "styled-components"
+import styled, {keyframes, css} from "styled-components"
 import { WrapperStyled, LargeHeadingStyled } from "../../components/ui/StyledComponents"
 import { colors } from "../../components/ui/Colors"
 
 const {middle} = colors;
 
+const ScaleHeading = keyframes `
+    0% {transform: scale(1); opacity: 0}
+    50% {transform: scale(1.2); opacity: 1}
+    100% {transform: scale(1); opacity: 1}
+`
+
+const Animation = css `
+    animation: 2s ${ScaleHeading}
+`
 
 const Wrapper = styled(WrapperStyled) `
     height: 400px;
@@ -15,10 +24,13 @@ const Wrapper = styled(WrapperStyled) `
 
 const LargeHeading = styled(LargeHeadingStyled) `
     font-size: min(10vw, 8rem);
+    transition: 3s;
+    visibility: ${(({showAnimation}) => showAnimation ? "visible" : "hidden")};
+    ${(({showAnimation}) => showAnimation ? Animation : "")};
     @media screen and (max-width: 1100px) {
         margin-bottom: 50px;
     }
-`
+    `
 
 const Footer = styled.div `
     width: 100%;
@@ -38,7 +50,6 @@ const Footer = styled.div `
 `
 
 const CopyrightNameContainer = styled.div `
-    
 `
 
 const CopyrightText = styled.p `

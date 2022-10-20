@@ -1,9 +1,34 @@
+import {useState, useEffect, useRef} from "react"
 import { Wrapper, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress } from "./ContactsStyle"
+import { showingPointFunction } from "../../util/showingPointFunction"
 
 const Contacts = () => {
+
+  const [showAnimation, setShowAnimation] = useState(false)
+
+  const touchRef = useRef(null)
+
+  const {showingPoint, elementTop} = showingPointFunction
+
+  const animateTouch = () => {
+    const touchPosition = elementTop(touchRef.current)
+    if(touchPosition < showingPoint()) {
+      setShowAnimation(!showAnimation)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", animateTouch)
+    return () => window.removeEventListener("scroll", animateTouch)
+  }, [])
+
   return (
     <Wrapper>
-      <LargeHeading>Let’s get in touch!</LargeHeading>
+      <LargeHeading
+      onClick={animateTouch}
+      ref={touchRef}
+      showAnimation={showAnimation}
+      >Let’s get in touch!</LargeHeading>
       <Footer>
         <CopyrightNameContainer>
           <CopyrightText>© 2022</CopyrightText>
