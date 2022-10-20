@@ -6,16 +6,17 @@ const {middle} = colors;
 
 const ScaleHeading = keyframes `
     0% {transform: scale(1); opacity: 0}
-    50% {transform: scale(1.2); opacity: 1}
+    40% {transform: scale(1.15); opacity: 1}
+    80% {transform: scale(0.95); opacity: 1}
     100% {transform: scale(1); opacity: 1}
 `
 
 const Animation = css `
-    animation: 2s ${ScaleHeading}
+    animation: 2s ease-in ${ScaleHeading}
 `
 
 const Wrapper = styled(WrapperStyled) `
-    margin: 0px;
+    margin: 0;
     height: fit-content;
     justify-content: space-between;
     @media screen and (max-width: 1100px) {
@@ -24,6 +25,7 @@ const Wrapper = styled(WrapperStyled) `
 `
 
 const LargeHeading = styled(LargeHeadingStyled) `
+    position: absolute;
     font-size: min(10vw, 8rem);
     margin-bottom: 100px;
     transition: 3s;
@@ -37,7 +39,7 @@ const LargeHeading = styled(LargeHeadingStyled) `
 const Footer = styled.div `
     width: 100%;
     height: 180px;
-    margin-bottom: 5vh;
+    margin: 250px 0 5vh;
     padding: 0 80px;
     display: flex;
     justify-content: space-between;
@@ -48,6 +50,10 @@ const Footer = styled.div `
         flex-direction: column;
         height: 220px;
         padding: 5% 80px;
+        margin-top: 150px;
+    }
+    @media screen and (max-width: 1100px) {
+        margin-top: 100px;
     }
 `
 

@@ -5,7 +5,7 @@ import { showingPointFunction } from "../../util/showingPointFunction"
 const Contacts = () => {
 
   const [showAnimation, setShowAnimation] = useState(false)
-
+  
   const touchRef = useRef(null)
 
   const {showingPoint, elementTop} = showingPointFunction
@@ -18,8 +18,8 @@ const Contacts = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", animateTouch)
-    return () => window.removeEventListener("scroll", animateTouch)
+      window.addEventListener("scroll", animateTouch)
+      return () => window.removeEventListener("scroll", animateTouch)
   }, [])
 
   return (
