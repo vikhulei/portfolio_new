@@ -75,7 +75,7 @@ const LinksWrapper = styled.div `
         margin-top: 20px;
         border-radius: 20px;
     }
-    `
+`
     
 const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;
@@ -86,6 +86,7 @@ const LinkContainer = styled(LinkContainerStyled) `
         margin-left: 15%;
     }     
 `
+
 const LinkTextContainer = styled(LinkTextContainerStyled) `
     height: 75px;
     display: flex;
@@ -96,13 +97,9 @@ const LinkTextContainer = styled(LinkTextContainerStyled) `
     }
 `
 
-const LinkTextView = styled(LinkTextViewStyled) `
+const LinkTextView = styled(LinkTextViewStyled) ``
 
-`
-
-const LinkTextAddress = styled(LinkTextAddressStyled) `
-
-`
+const LinkTextAddress = styled(LinkTextAddressStyled) ``
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;
@@ -111,7 +108,6 @@ const IconImage = styled(LinkIconStyled) `
         width: 70px;
     }
 `
-
 
 const TechnologyImageContainer = styled.div `
     height: 15%;

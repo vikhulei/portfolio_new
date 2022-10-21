@@ -1,1 +1,1 @@
-This is my new portfolio, showcasing latest projects
+This is my new portfolio, showcasing the latest projects

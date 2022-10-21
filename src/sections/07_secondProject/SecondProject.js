@@ -7,32 +7,26 @@ import reactRouter from "../../assets/icons/reactRouter.png"
 const SecondProject = () => {
   return (
     <Wrapper>
-
       <LinksWrapper>
-
         <LinkContainer>
           <IconImage src={github} alt="github_image" />
-
           <LinkTextContainer>
             <LinkTextView>
               View on GitHub
             </LinkTextView>
             <LinkTextAddress href="https://github.com/vikhulei/bethany_church">
-            https://github.com/ vikhulei/ bethany_church
+              https://github.com/ vikhulei/ bethany_church
             </LinkTextAddress>
           </LinkTextContainer>
-
         </LinkContainer>
-
-
         <LinkContainer>
-          <IconImage src={surge} alt="githubpages_image"/>
+          <IconImage src={surge} alt="githubpages_image" />
           <LinkTextContainer>
             <LinkTextView>
               Run on Surge platform
             </LinkTextView>
             <LinkTextAddress href="https://bethanynivki.surge.sh/">
-            https://bethanynivki. surge. sh/
+              https://bethanynivki. surge. sh/
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>
@@ -40,7 +34,6 @@ const SecondProject = () => {
           <TechnologyImage src={reactRouter} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
-
       <ImageDescriptionWrapper>
         <ImageContainer>
           <Image src={church} alt="image_safety" />
@@ -49,7 +42,6 @@ const SecondProject = () => {
           This small website was created for an existing church in Kyiv. It has a landing page, a brief history, a schedule of services and a <em> Message-Us </em> page.
         </Description>
       </ImageDescriptionWrapper>
-
     </Wrapper>
   )
 }

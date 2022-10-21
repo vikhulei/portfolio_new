@@ -9,7 +9,6 @@ const Wrapper = styled(WrapperStyled) `
     padding: 0;
     height: 990px;
     justify-content: space-between;
-    // border: black solid 1px;
 `
 
 const ImagesWrapper = styled.div`

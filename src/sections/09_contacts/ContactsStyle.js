@@ -7,7 +7,6 @@ const {middle} = colors;
 const ScaleHeading = keyframes `
     0% {transform: scale(1); opacity: 0}
     40% {transform: scale(1.25); opacity: 1}
-    // 80% {transform: scale(0.95); opacity: 1}
     100% {transform: scale(1); opacity: 1}
 `
 
@@ -34,7 +33,7 @@ const LargeHeading = styled(LargeHeadingStyled) `
     @media screen and (max-width: 1100px) {
         margin-bottom: 50px;
     }
-    `
+`
 
 const Footer = styled.div `
     width: 100%;
@@ -57,15 +56,11 @@ const Footer = styled.div `
     }
 `
 
-const CopyrightNameContainer = styled.div `
-`
+const CopyrightNameContainer = styled.div ``
 
-const CopyrightText = styled.p `
-`
-const NameText = styled.p `
+const CopyrightText = styled.p ``
 
-`
-
+const NameText = styled.p ``
 
 const PortfolioContainer = styled.div `
     font-style: italic;
@@ -76,21 +71,15 @@ const CheckPortfolioText = styled.p `
     font-weight: bold;
 `
 
-const PortfolioAddress = styled.a `
-
-`
+const PortfolioAddress = styled.a ``
 
 const ContactsContainer = styled.div `
     text-align: right;
 `
 
-const PhoneNumber = styled.p `
+const PhoneNumber = styled.p ``
 
-`
-
-const EmailAddress = styled.a `
-
-`
+const EmailAddress = styled.a ``
 
 
 export { Wrapper, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress }

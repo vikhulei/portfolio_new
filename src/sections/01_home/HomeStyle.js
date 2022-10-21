@@ -18,7 +18,6 @@ const Appear = keyframes `
 
 const Background = styled.div `
 background-color: ${background};
-// position: relative;
 `
 
 const Wrapper = styled(WrapperStyled) `

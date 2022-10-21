@@ -20,6 +20,7 @@ const Wrapper = styled(WrapperStyled) `
     }
 
 `
+
 const ImageDescriptionWrapper = styled.div `
     width: 55%;
     height: 80%;
@@ -33,7 +34,7 @@ const ImageDescriptionWrapper = styled.div `
         justify-content: left;
         margin-bottom: 50px;
     }
-    `
+`
     
 const ImageContainer = styled.div `
     position: relative;
@@ -89,6 +90,7 @@ const LinkContainer = styled(LinkContainerStyled) `
         margin-left: 15%;
     }    
 `
+
 const LinkTextContainer = styled(LinkTextContainerStyled) `
     height: 75px;
     @media screen and (max-width: 1100px) {
@@ -100,9 +102,7 @@ const LinkTextView = styled(LinkTextViewStyled) `
     color: white;
 `
 
-const LinkTextAddress = styled(LinkTextAddressStyled) `
-
-`
+const LinkTextAddress = styled(LinkTextAddressStyled) ``
 
 const IconImage = styled(LinkIconStyled) `
     height: 100%;

@@ -91,7 +91,7 @@ const ValueNumber = styled.p `
         height: 37px;
         font-size: 1.3rem;
     }
-    `
+`
     
 const ValueName = styled.p `
     margin-left: 20px;

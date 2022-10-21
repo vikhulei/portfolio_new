@@ -64,34 +64,29 @@ const Techs = () => {
         <IconContainer>
           <Icon
           src={axios}
-          // ref={iconsRef}
           style={{"rotate": "25deg"}}
           />
         </IconContainer>
         <IconContainer>
           <Icon
           src={figma}
-          // ref={iconsRef}
           style={{"rotate": "-15deg"}}
           />
         </IconContainer>
         <IconContainer>
           <Icon
           src={styled}
-          // ref={iconsRef}
           />
         </IconContainer>
         <IconContainer>
           <Icon
           src={git}
-          // ref={iconsRef}
           style={{"rotate": "-25deg"}}
           />
         </IconContainer>
         <IconContainer>
           <Icon
           src={redux}
-          // ref={iconsRef}
           style={{"rotate": "10deg"}}
           />
         </IconContainer>

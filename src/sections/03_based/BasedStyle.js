@@ -59,7 +59,7 @@ const EquimpentImageContainer = styled.div `
     @media screen and (max-width: 1000px) {
         visibility: hidden;
     }
-    `
+`
     
     const EquimpentImage = styled.img `
     width: 100%;

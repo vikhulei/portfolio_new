@@ -12,13 +12,12 @@ const Wrapper = styled(WrapperStyled)`
     @media screen and (max-width: 1100px) {
         margin: 0 0 50px 0;
         padding: 0 0 50px 0;
-        // overflow: auto;
         height: fit-content;
-        // height: 1200px;
         border-radius: 20px;
         justify-content: left;
     }
 `
+
 const ImageDescriptionWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -31,7 +30,7 @@ const ImageDescriptionWrapper = styled.div`
         flex-direction: column;
         margin-bottom: 50px;
     }
-    `
+`
 
 const ImageContainer = styled.div`
     position: relative;
@@ -40,9 +39,9 @@ const ImageContainer = styled.div`
         width: 100%;
         margin-bottom: 50px;
     }
-    `
+`
     
-    const ImageText = styled.p`
+const ImageText = styled.p`
     position: absolute;
     top: 40%;
     left: 10%;
@@ -50,15 +49,15 @@ const ImageContainer = styled.div`
     color: white;
     font-size: min(10vw, 4rem);
     font-style: italic;
-    `
+`
     
-    const Image = styled.img`
+const Image = styled.img`
     width: 100%;
     border-radius: 20px;
     object-fit: contain;
-    `
+`
     
-    const Description = styled(RegularTextStyled)`
+const Description = styled(RegularTextStyled)`
     width: 35%;
     text-align: right;
     font-size: min(5.5vw, 2.3rem);
@@ -83,29 +82,20 @@ const LinksWrapper = styled.div`
         align-items: center;
         padding: 0;
     }
-    // @media screen and (max-width: 500px) {
-    //     height: 30vh;
-    // }
 `
 
 const LinkContainer = styled(LinkContainerStyled)`
-@media screen and (max-width: 1100px) {
-    width: 100%;
-    // margin-left: 50%;
-    // transform: translateX(-50%);
-}
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+    }
 `
 const LinkTextContainer = styled(LinkTextContainerStyled)`
     height: auto;
 `
 
-const LinkTextView = styled(LinkTextViewStyled)`
-
-`
+const LinkTextView = styled(LinkTextViewStyled)``
     
-const LinkTextAddress = styled(LinkTextAddressStyled)`
-
-`
+const LinkTextAddress = styled(LinkTextAddressStyled)``
 
 const IconImage = styled(LinkIconStyled)`
     height: 100%;
@@ -113,13 +103,12 @@ const IconImage = styled(LinkIconStyled)`
         height: auto;
         width: 60px;
     }
-    `
+`
 
 const TechnologyImageContainer = styled.div`
     display: flex;
     align-items: center;
     @media screen and (max-width: 1100px) {
-        // margin-top: 20px;
         width: 170px;
     }
     @media screen and (max-width: 800px) {
