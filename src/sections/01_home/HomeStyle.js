@@ -99,7 +99,7 @@ const ButtonHome = styled.a `
         transform: translate(3px, 3px);
         color: darkblue;
     }
-    @media screen and (max-weight: 800px) {
+    @media screen and (max-width: 800px) {
         line-height: 3;
     }
 `
