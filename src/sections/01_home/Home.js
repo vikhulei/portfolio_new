@@ -16,7 +16,7 @@ const Home = () => {
                 <MainTextHome>I am passionate about web development and enjoy creating sites and applications
                 </MainTextHome>
                 <ButtonEmailWrapper>
-                    <ButtonHome>Curriculum Vitae</ButtonHome>
+                    <ButtonHome href="https://www.linkedin.com/in/vikhulei/" target="_blank">Curriculum Vitae</ButtonHome>
                     <EmailHome href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</EmailHome>
                 </ButtonEmailWrapper>
             </Wrapper>

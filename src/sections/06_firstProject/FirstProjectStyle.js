@@ -78,6 +78,7 @@ const LinksWrapper = styled.div `
         padding: 3% 10% 5%;
         margin-top: 0px;
         border-radius: 20px;
+        background-color: transparent;
     }
     `
     
@@ -100,6 +101,10 @@ const LinkTextContainer = styled(LinkTextContainerStyled) `
 
 const LinkTextView = styled(LinkTextViewStyled) `
     color: white;
+    @media screen and (max-width: 1100px) {
+        color: black;
+    }
+
 `
 
 const LinkTextAddress = styled(LinkTextAddressStyled) ``

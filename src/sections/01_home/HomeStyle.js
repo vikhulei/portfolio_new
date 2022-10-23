@@ -81,7 +81,9 @@ const ButtonEmailWrapper = styled.div `
     }
 `
 
-const ButtonHome = styled.button `
+const ButtonHome = styled.a `
+    text-decoration: none;
+    color: black;
     width: 70%;
     max-width: 300px;
     height: 6vh;
@@ -90,12 +92,16 @@ const ButtonHome = styled.button `
     border-radius: 20px;
     background-color: ${middle_light};
     font-size: min(4vw, 1.5rem);
-    font-weight: 100;
     cursor: pointer;
+    text-align: center;
+    line-height: 2.2;
     &:active {
         transform: translate(3px, 3px);
+        color: darkblue;
     }
-    
+    @media screen and (max-weight: 800px) {
+        line-height: 3;
+    }
 `
 
 const EmailHome = styled.a `

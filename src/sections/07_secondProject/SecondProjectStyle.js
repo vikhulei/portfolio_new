@@ -74,6 +74,7 @@ const LinksWrapper = styled.div `
         padding: 0 10% 5%;
         margin-top: 20px;
         border-radius: 20px;
+        background-color: transparent;
     }
 `
     
