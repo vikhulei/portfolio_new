@@ -9,8 +9,8 @@ const Wrapper = styled(WrapperStyled)`
     background-color: ${light};
     padding: 50px 0;
     height: 900px;
+    margin-bottom: 0;
     @media screen and (max-width: 1100px) {
-        margin: 0 0 50px 0;
         padding: 0 0 50px 0;
         height: fit-content;
         border-radius: 20px;
@@ -60,7 +60,7 @@ const Image = styled.img`
 const Description = styled(RegularTextStyled)`
     width: 35%;
     text-align: right;
-    font-size: min(5.5vw, 2.3rem);
+    font-size: min(4.5vw, 2.3rem);
     @media screen and (max-width: 1100px) {
         width: 90%;
         text-align: center;
@@ -74,20 +74,35 @@ const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1100px) {
-        height: 45vw;
+        height: 45vh;
         max-height: 300px;
-        width: fit-content;
+        width: 100%;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+        background-color: transparent;
     }
-`
+    `
+    // @media screen and (max-width: 1100px) {
+    //     height: 45vw;
+    //     max-height: 300px;
+    //     width: fit-content;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 0;
+    // }
 
 const LinkContainer = styled(LinkContainerStyled)`
     @media screen and (max-width: 1100px) {
         width: 100%;
+        margin-left: 25%;
     }
+    @media screen and (max-width: 600px) {
+        margin-left: 15%;
+    }    
 `
 const LinkTextContainer = styled(LinkTextContainerStyled)`
     height: auto;

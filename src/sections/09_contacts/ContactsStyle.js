@@ -5,10 +5,10 @@ import { colors } from "../../components/ui/Colors"
 const {middle} = colors;
 
 const ScaleHeading = keyframes `
-    0% {transform: scale(1); opacity: 0}
-    40% {transform: scale(1.25); opacity: 1}
+    0% {transform: scale(0.5); opacity: 0}
     100% {transform: scale(1); opacity: 1}
-`
+    `
+    // 40% {transform: scale(1.25); opacity: 1}
 
 const Animation = css `
     animation: 3s ${ScaleHeading}
@@ -18,27 +18,33 @@ const Wrapper = styled(WrapperStyled) `
     margin: 0;
     height: fit-content;
     justify-content: space-between;
-    @media screen and (max-width: 1100px) {
-        height: fit-content;
+`
+
+const LargeHeadingContainer = styled.div `
+    position: relative;
+    padding: 0;
+    display: flex;
+    margin: 50px 0;
+    @media (max-width: 800px) {
+        margin: 30px 0;
     }
 `
 
 const LargeHeading = styled(LargeHeadingStyled) `
-    position: absolute;
-    font-size: min(10vw, 8rem);
-    margin-bottom: 100px;
-    transition: 3s;
+    margin: 0;
+    padding: 0;
+    transition: 2s;
     visibility: ${(({showAnimation}) => showAnimation ? "visible" : "hidden")};
     ${(({showAnimation}) => showAnimation ? Animation : "")};
     @media screen and (max-width: 1100px) {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
 `
 
 const Footer = styled.div `
     width: 100%;
     height: 180px;
-    margin: 250px 0 5vh;
+    margin-bottom: 5vh;
     padding: 0 80px;
     display: flex;
     justify-content: space-between;
@@ -49,10 +55,10 @@ const Footer = styled.div `
         flex-direction: column;
         height: 220px;
         padding: 5% 80px;
-        margin-top: 150px;
+        // margin-top: 150px;
     }
     @media screen and (max-width: 1100px) {
-        margin-top: 100px;
+        // margin-top: 100px;
     }
 `
 
@@ -82,4 +88,4 @@ const PhoneNumber = styled.p ``
 const EmailAddress = styled.a ``
 
 
-export { Wrapper, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress }
+export { Wrapper, LargeHeadingContainer, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress }

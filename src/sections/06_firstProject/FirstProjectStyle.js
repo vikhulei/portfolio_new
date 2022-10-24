@@ -71,20 +71,31 @@ const LinksWrapper = styled.div `
     align-items: left;
     background-color: ${dark};
     @media screen and (max-width: 1100px) {
-        justify-content: left;
         height: 50%;
-        max-height: 350px;
+        max-height: 300px;
         width: 100%;
-        padding: 3% 10% 5%;
-        margin-top: 0px;
-        border-radius: 20px;
-        background-color: transparent;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
     }
     `
+    // @media screen and (max-width: 1100px) {
+    //     justify-content: left;
+    //     height: 50%;
+    //     max-height: 350px;
+    //     width: 100%;
+    //     padding: 3% 10% 5%;
+    //     margin-top: 0px;
+    //     border-radius: 20px;
+    //     background-color: transparent;
+    // }
     
 const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;
     @media screen and (max-width: 1100px) {
+        width: 100%;
         margin-left: 25%;
     }    
     @media screen and (max-width: 600px) {

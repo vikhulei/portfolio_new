@@ -5,4 +5,5 @@
     width: 95vw;
     max-width: 1400px;
     padding: 0;
+    overflow-x: hidden;
 }

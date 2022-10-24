@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import { Wrapper, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress } from "./ContactsStyle"
+import { Wrapper, LargeHeadingContainer, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress } from "./ContactsStyle"
 import { showingPointFunction } from "../../util/showingPointFunction"
 
 const Contacts = () => {
@@ -24,11 +24,12 @@ const Contacts = () => {
 
   return (
     <Wrapper>
+      <LargeHeadingContainer>
       <LargeHeading
-        onClick={animateTouch}
         ref={touchRef}
         showAnimation={showAnimation}
       >Let’s get in touch!</LargeHeading>
+      </LargeHeadingContainer>
       <Footer>
         <CopyrightNameContainer>
           <CopyrightText>© 2022</CopyrightText>

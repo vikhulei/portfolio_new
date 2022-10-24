@@ -51,6 +51,11 @@ const LinkTextAddressStyled = styled.a `
     font-size: min(3.5vw, 1.1rem);
     word-wrap: brake-word;
     margin-top: 10px;
+    color: darkblue;
+    &:visited {
+        color: darkblue;
+    }
+
 `
 
 const LinkIconStyled = styled.img `
