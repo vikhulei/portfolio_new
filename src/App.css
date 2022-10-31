@@ -1,9 +1,0 @@
-.App {
-    position: absolute;
-    margin-left: 50%;
-    transform: translate(-50%);
-    width: 95vw;
-    max-width: 1400px;
-    padding: 0;
-    overflow-x: hidden;
-}
