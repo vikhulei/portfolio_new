@@ -4,7 +4,7 @@ import github from "../../assets/icons/github.png"
 import githubpages from "../../assets/icons/githubpages.png"
 import html from "../../assets/icons/html.png"
 
-const FirstProject = () => {
+const ThirdProject = () => {
   return (
     <Wrapper>
       <ImageDescriptionWrapper>
@@ -49,4 +49,4 @@ const FirstProject = () => {
   )
 }
 
-export default FirstProject
+export default ThirdProject

@@ -1,5 +1,3 @@
-import { Wrapper, LinksWrapper } from "./FirstProjectStyle"
-
 import { ImageDescriptionWrapperProjects,
   ImageContainerProjects,
   ImageProjects,
@@ -7,17 +5,17 @@ import { ImageDescriptionWrapperProjects,
   LinkContainerProjects,
   LinkTextContainerProjects,
   LinkTextViewProjects,
-  LinkTextAddressStyled,
+  LinkTextAddressProjects,
   IconProjects,
-  TechnologyImageContainer,
-  TechnologyImage } from "../../components/ProjectsComponents"
-
+  TechnologyImageContainerProjects,
+  TechnologyImageProjects } from "../../components/ProjectsComponents"
+import { Wrapper, LinksWrapper } from "./FirstProjectStyle"
 import contactStore from "../../assets/contactStore.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
 import redux2 from "../../assets/icons/redux2.png"
 
-const ThirdProject = () => {
+const FirstProject = () => {
   return (
     <Wrapper>
       <ImageDescriptionWrapperProjects>
@@ -36,9 +34,9 @@ const ThirdProject = () => {
             <LinkTextViewProjects>
               View on GitHub
             </LinkTextViewProjects>
-            <LinkTextAddressStyled href="https://github.com/vikhulei/contact_store_v2">
+            <LinkTextAddressProjects href="https://github.com/vikhulei/contact_store_v2">
             https://github.com/ vikhulei/ contact_store_v2
-            </LinkTextAddressStyled>
+            </LinkTextAddressProjects>
           </LinkTextContainerProjects>
         </LinkContainerProjects>
         <LinkContainerProjects>
@@ -47,17 +45,17 @@ const ThirdProject = () => {
             <LinkTextViewProjects>
               Run on Surge platform
             </LinkTextViewProjects>
-            <LinkTextAddressStyled href="http://contactstore.surge.sh/">
+            <LinkTextAddressProjects href="http://contactstore.surge.sh/">
             http://contactstore. surge. sh
-            </LinkTextAddressStyled>
+            </LinkTextAddressProjects>
           </LinkTextContainerProjects>
         </LinkContainerProjects>
-        <TechnologyImageContainer>
-          <TechnologyImage src={redux2} alt="html_image" />
-        </TechnologyImageContainer>
+        <TechnologyImageContainerProjects>
+          <TechnologyImageProjects src={redux2} alt="html_image" />
+        </TechnologyImageContainerProjects>
       </LinksWrapper>
     </Wrapper>
   )
 }
 
-export default ThirdProject
+export default FirstProject

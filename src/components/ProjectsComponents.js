@@ -111,7 +111,7 @@ const LinkTextViewProjects = styled.p `
 
 `
 
-const LinkTextAddressStyled = styled.a `
+const LinkTextAddressProjects = styled.a `
     font-size: min(3.5vw, 1.1rem);
     word-wrap: brake-word;
     margin-top: 10px;
@@ -129,17 +129,16 @@ const IconProjects = styled.img `
     }
 `
 
-
-const TechnologyImageContainer = styled.div `
-    height: 22%;
+const TechnologyImageContainerProjects = styled.div `
+    height: 18%;
     align-self: center;
     @media screen and (max-width: 1100px) {
         max-height: 100px;
-        height: 10vh;
+        height: 8vh;
     }
 `
 
-const TechnologyImage = styled.img `
+const TechnologyImageProjects = styled.img `
     height: 100%
 `
 
@@ -152,7 +151,7 @@ export {WrappedStyledProjects,
     LinkContainerProjects,
     LinkTextContainerProjects,
     LinkTextViewProjects,
-    LinkTextAddressStyled,
+    LinkTextAddressProjects,
     IconProjects,
-    TechnologyImageContainer,
-    TechnologyImage }
+    TechnologyImageContainerProjects,
+    TechnologyImageProjects }

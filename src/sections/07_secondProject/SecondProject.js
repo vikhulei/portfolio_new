@@ -1,4 +1,17 @@
-import { Wrapper, ImageDescriptionWrapper, ImageContainer, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage } from "./SecondProjectStyle"
+import { ImageDescriptionWrapperProjects,
+  ImageContainerProjects,
+  ImageProjects,
+  DescriptionProjects,
+  LinkContainerProjects,
+  LinkTextContainerProjects,
+  LinkTextViewProjects,
+  LinkTextAddressProjects,
+  IconProjects,
+  TechnologyImageContainerProjects,
+  TechnologyImageProjects } from "../../components/ProjectsComponents"
+
+import { Wrapper, LinksWrapper } from "./SecondProjectStyle"
+
 import church from "../../assets/church.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
@@ -8,40 +21,40 @@ const SecondProject = () => {
   return (
     <Wrapper>
       <LinksWrapper>
-        <LinkContainer>
-          <IconImage src={github} alt="github_image" />
-          <LinkTextContainer>
-            <LinkTextView>
+        <LinkContainerProjects>
+          <IconProjects src={github} alt="github_image" />
+          <LinkTextContainerProjects>
+            <LinkTextViewProjects>
               View on GitHub
-            </LinkTextView>
-            <LinkTextAddress href="https://github.com/vikhulei/bethany_church">
+            </LinkTextViewProjects>
+            <LinkTextAddressProjects href="https://github.com/vikhulei/bethany_church">
               https://github.com/ vikhulei/ bethany_church
-            </LinkTextAddress>
-          </LinkTextContainer>
-        </LinkContainer>
-        <LinkContainer>
-          <IconImage src={surge} alt="githubpages_image" />
-          <LinkTextContainer>
-            <LinkTextView>
+            </LinkTextAddressProjects>
+          </LinkTextContainerProjects>
+        </LinkContainerProjects>
+        <LinkContainerProjects>
+          <IconProjects src={surge} alt="githubpages_image" />
+          <LinkTextContainerProjects>
+            <LinkTextViewProjects>
               Run on Surge platform
-            </LinkTextView>
-            <LinkTextAddress href="https://bethanynivki.surge.sh/">
+            </LinkTextViewProjects>
+            <LinkTextAddressProjects href="https://bethanynivki.surge.sh/">
               https://bethanynivki. surge. sh/
-            </LinkTextAddress>
-          </LinkTextContainer>
-        </LinkContainer>
-        <TechnologyImageContainer>
-          <TechnologyImage src={reactRouter} alt="html_image" />
-        </TechnologyImageContainer>
+            </LinkTextAddressProjects>
+          </LinkTextContainerProjects>
+        </LinkContainerProjects>
+        <TechnologyImageContainerProjects>
+          <TechnologyImageProjects src={reactRouter} alt="html_image" />
+        </TechnologyImageContainerProjects>
       </LinksWrapper>
-      <ImageDescriptionWrapper>
-        <ImageContainer>
-          <Image src={church} alt="image_safety" />
-        </ImageContainer>
-        <Description>
+      <ImageDescriptionWrapperProjects>
+        <ImageContainerProjects>
+          <ImageProjects src={church} alt="image_safety" />
+        </ImageContainerProjects>
+        <DescriptionProjects>
           This small website was created for an existing church in Kyiv. It has a landing page, a brief history, a schedule of services and a <em> Message-Us </em> page.
-        </Description>
-      </ImageDescriptionWrapper>
+        </DescriptionProjects>
+      </ImageDescriptionWrapperProjects>
     </Wrapper>
   )
 }

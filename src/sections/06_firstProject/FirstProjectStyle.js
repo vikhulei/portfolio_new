@@ -13,7 +13,5 @@ const Wrapper = styled(WrappedStyledProjects) `
 const LinksWrapper = styled(LinksWrapperProjects) `
     background-color: ${dark};
 `
-   
-
 
 export { Wrapper, LinksWrapper }
