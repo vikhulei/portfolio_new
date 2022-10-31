@@ -15,18 +15,17 @@ const Appear = keyframes `
     }
 `
 
-
-const Background = styled.div `
-background-color: ${background};
+const Wrapper = styled.div `
+    background-color: ${background};
 `
 
-const Wrapper = styled(WrapperStyled) `
+const AnimationWrapper = styled(WrapperStyled) `
     margin-top: 30px;
     animation: ${Appear} 2s;
     @media screen and (max-width: 800px) {
         margin-top: 2.5vw;
         height: 95vh;
-    }
+    }  
 `
 
 const ImageNameWrapper = styled.div `
@@ -41,16 +40,15 @@ const ImageNameWrapper = styled.div `
 const MyImageContainer = styled.div `
     width: 40%;
     max-width: 200px;
-    margin-right: 20px;
 `
-
+    
 const MyImage = styled.img `
     width: 100%;
 `
-
-const MyName = styled.p `
+    
+    const MyName = styled.p `
     font-size: min(6vw, 3rem);
-    opacity: 1;
+    margin-left: 20px;
 `
 
 const LargeHeadingHome = styled(LargeHeadingStyled) `
@@ -84,23 +82,22 @@ const ButtonEmailWrapper = styled.div `
 const ButtonHome = styled.a `
     text-decoration: none;
     color: black;
-    width: 70%;
-    max-width: 300px;
-    height: 6vh;
-    max-height: 80px;
+    width: 300px;
+    height: 55px;
     border: none;
     border-radius: 20px;
     background-color: ${middle_light};
     font-size: min(4vw, 1.5rem);
     cursor: pointer;
     text-align: center;
-    line-height: 2.2;
+    padding: 12px 0;
     &:active {
         transform: translate(3px, 3px);
         color: darkblue;
     }
-    @media screen and (max-width: 800px) {
-        line-height: 3;
+    @media (max-width: 800px) {
+        width: 80%;
+        height: 45px;
     }
 `
 
@@ -111,4 +108,4 @@ const EmailHome = styled.a `
 
 
 
-export {Wrapper, Background, ImageNameWrapper, MyImageContainer, MyImage, MyName, LargeHeadingHome, MainTextHome, ButtonEmailWrapper, ButtonHome, EmailHome }
+export {Wrapper, AnimationWrapper, ImageNameWrapper, MyImageContainer, MyImage, MyName, LargeHeadingHome, MainTextHome, ButtonEmailWrapper, ButtonHome, EmailHome }

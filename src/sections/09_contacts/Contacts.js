@@ -37,7 +37,7 @@ const Contacts = () => {
         </CopyrightNameContainer>
         <PortfolioContainer>
           <CheckPortfolioText>Check the code for this portfolio</CheckPortfolioText>
-          <PortfolioAddress href="https://github.com/vikhulei/portfolio_new">https://github.com/vikhulei/portfolio_new</PortfolioAddress>
+          <PortfolioAddress href="https://github.com/vikhulei/portfolio_new">https://github.com/ vikhulei/ portfolio_new</PortfolioAddress>
         </PortfolioContainer>
         <ContactsContainer>
           <PhoneNumber>+447706 204681</PhoneNumber>

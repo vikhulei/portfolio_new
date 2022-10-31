@@ -26,7 +26,7 @@ const FirstProject = () => {
               View on GitHub
             </LinkTextView>
             <LinkTextAddress href="https://github.com/vikhulei/safety">
-              https://github.com/vikhulei/ safety
+              https://github.com/ vikhulei/ safety
             </LinkTextAddress>
           </LinkTextContainer>
         </LinkContainer>

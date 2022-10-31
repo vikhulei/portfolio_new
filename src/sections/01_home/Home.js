@@ -1,11 +1,11 @@
-import { Wrapper, Background, ImageNameWrapper, MyImageContainer, MyImage, MyName, LargeHeadingHome, MainTextHome, ButtonEmailWrapper, ButtonHome, EmailHome } from "./HomeStyle"
+import { Wrapper, AnimationWrapper, ImageNameWrapper, MyImageContainer, MyImage, MyName, LargeHeadingHome, MainTextHome, ButtonEmailWrapper, ButtonHome, EmailHome } from "./HomeStyle"
 import myImage from "../../assets/myImageHome.png"
 
 
 const Home = () => {
     return (
-        <Background>
-            <Wrapper>
+        <Wrapper>
+            <AnimationWrapper>
                 <ImageNameWrapper>
                     <MyImageContainer>
                         <MyImage src={myImage} alt="myImage" />
@@ -19,8 +19,8 @@ const Home = () => {
                     <ButtonHome href="https://www.linkedin.com/in/vikhulei/" target="_blank">Curriculum Vitae</ButtonHome>
                     <EmailHome href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</EmailHome>
                 </ButtonEmailWrapper>
-            </Wrapper>
-        </Background>
+            </AnimationWrapper>
+        </Wrapper>
     )
 }
 
