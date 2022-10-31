@@ -1,8 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../components/ui/Colors"
 import { WrapperStyled } from "../../components/ui/StyledComponents"
-
-const { background, middle_light } = colors
 
 
 const Wrapper = styled(WrapperStyled) `
@@ -38,54 +35,47 @@ const ImageContainer = styled.div`
 
 const LeftImage = styled(ImageContainer)`
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
     @media screen and (max-width: 1250px) {
         display: none;
     }
 `
     
 const TopImage = styled(ImageContainer)`
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    `
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+`
     
-    const BottomImage = styled(ImageContainer)`
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    `
+const BottomImage = styled(ImageContainer)`
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+`
 
 const Image = styled.img`
     height: 100%;
     width: 100%;
     object-fit: cover;
-    `
+`
 
 const IconsWrapper = styled.div `
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: end;
     transition: 0.5s;
     opacity: ${(({showIcons}) => showIcons ? 1 : 0)};
     transform: translateY(${(({showIcons}) => showIcons ? "0px" : "50px")});
-
-    `
+`
     
-    const IconContainer = styled.div `
+const IconContainer = styled.div `
     width: 120px;
     height: 90px;
     overflow: hidden;
-    `
-    const Icon = styled(Image)`
+`
+
+const Icon = styled(Image)`
     object-fit: contain;
-    `
+`
 
 
 export { Wrapper, ImagesWrapper, LeftImage, TopImage, BottomImage, Image, IconsWrapper, IconContainer, Icon }
