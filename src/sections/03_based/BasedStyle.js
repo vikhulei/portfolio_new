@@ -15,7 +15,6 @@ const Animation = css `
 `
 
 const Wrapper = styled(WrapperStyled) `
-    padding: 80px 80px 50px;
     justify-content: space-between;
     align-items: start;
     background-color: ${dark};
@@ -27,7 +26,6 @@ const Wrapper = styled(WrapperStyled) `
 `
 
 const Heading = styled.h1 `
-    text-align: left;
     width: 70%;
     max-width: 800px;
     font-size: min(10vw, 4rem);
@@ -61,9 +59,10 @@ const EquimpentImageContainer = styled.div `
     }
 `
     
-    const EquimpentImage = styled.img `
+const EquimpentImage = styled.img `
     width: 100%;
 `
+
 const MyImageContainer = styled.div `
     position: absolute;
     right: 50px;

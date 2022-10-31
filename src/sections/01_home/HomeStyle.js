@@ -21,6 +21,7 @@ const Wrapper = styled.div `
 
 const AnimationWrapper = styled(WrapperStyled) `
     margin-top: 30px;
+    padding: 100px 0;
     animation: ${Appear} 2s;
     @media screen and (max-width: 800px) {
         margin-top: 2.5vw;
@@ -31,7 +32,7 @@ const AnimationWrapper = styled(WrapperStyled) `
 const ImageNameWrapper = styled.div `
     width: 85%;
     max-width: 800px;
-    margin-top: 100px;
+    // margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
