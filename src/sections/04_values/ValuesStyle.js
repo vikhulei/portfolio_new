@@ -5,8 +5,6 @@ import { colors } from "../../components/ui/Colors"
 const {middle, middle_light} = colors
 
 const Wrapper = styled(WrapperStyled) `
-    margin: 0;
-    padding: 0;
     align-items: start;
     background-color: ${middle_light};
     @media screen and (max-width: 1400px) {
@@ -14,12 +12,8 @@ const Wrapper = styled(WrapperStyled) `
     }
 `
     
-    const Heading = styled.h1 `
+const Heading = styled.h1 `
     font-size: min(10vw, 4rem);
-    margin: 50px 0 0 50px;
-    @media screen and (max-width: 800px) {
-        margin-left: 10%;
-    }
 `
 
 const ValuesWrapper = styled.div `
@@ -70,8 +64,8 @@ const ValueContainer = styled.div `
             padding: 0;
         }
     }
-
 `
+
 const ValueNameContainer = styled.div `
     display: flex;
     align-items: center;
