@@ -15,6 +15,21 @@ const WrapperStyled = styled.div `
     }
 `
 
+const WrappedStyledProjects = styled(WrapperStyled) `
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        padding: 0;
+        justify-content: left;
+        height: fit-content;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+`
+
 const LargeHeadingStyled = styled.h1 `
     font-size: min(12vw, 10rem);
     @media screen and (max-width: 1250px) {
@@ -65,4 +80,6 @@ const LinkIconStyled = styled.img `
     // width: 100%;
 `
 
-export {WrapperStyled, LargeHeadingStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled }
+export {WrapperStyled, WrappedStyledProjects, LargeHeadingStyled, RegularTextStyled, 
+    LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled 
+}

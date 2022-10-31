@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { WrapperStyled } from "../../components/ui/StyledComponents"
+import { WrapperStyled } from "../../components/GeneralComponents"
 
 
 const Wrapper = styled(WrapperStyled) `

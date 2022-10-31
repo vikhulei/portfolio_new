@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/ui/StyledComponents"
-import { colors } from "../../components/ui/Colors"
+import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/GeneralComponents"
+import { colors } from "../../components/Colors"
 
 const { light } = colors
 

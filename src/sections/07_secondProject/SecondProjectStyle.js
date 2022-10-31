@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/ui/StyledComponents"
-import { colors } from "../../components/ui/Colors"
+import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/GeneralComponents"
+import { colors } from "../../components/Colors"
 
 const {background, middle} = colors
 
@@ -76,18 +76,7 @@ const LinksWrapper = styled.div `
         border-radius: 0 0 20px 20px;
         background-color: transparent;
     }
-
-    `
-    // @media screen and (max-width: 1100px) {
-    //     justify-content: left;
-    //     align-items: start;
-    //     height: 45%;
-    //     max-height: 300px;
-    //     width: 100%;
-    //     padding: 0 10% 5%;
-    //     margin-top: 20px;
-    //     border-radius: 20px;
-    // }
+`
     
 const LinkContainer = styled(LinkContainerStyled) `
     height: 100px;

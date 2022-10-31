@@ -1,6 +1,6 @@
 import styled, {keyframes, css} from "styled-components"
-import { WrapperStyled, LargeHeadingStyled } from "../../components/ui/StyledComponents"
-import { colors } from "../../components/ui/Colors"
+import { WrapperStyled, LargeHeadingStyled } from "../../components/GeneralComponents"
+import { colors } from "../../components/Colors"
 
 const {middle} = colors;
 

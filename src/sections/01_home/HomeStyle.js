@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components"
-import { colors } from "../../components/ui/Colors"
-import { WrapperStyled, LargeHeadingStyled } from "../../components/ui/StyledComponents"
+import { colors } from "../../components/Colors"
+import { WrapperStyled, LargeHeadingStyled } from "../../components/GeneralComponents"
 
 const {background, middle_light} = colors
 

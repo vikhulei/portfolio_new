@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { WrapperStyled, LargeHeadingStyled, RegularTextStyled } from "../../components/ui/StyledComponents"
+import { WrapperStyled, LargeHeadingStyled, RegularTextStyled } from "../../components/GeneralComponents"
 
 const Wrapper = styled(WrapperStyled) `
     height: 400px;
