@@ -14,8 +14,9 @@ const Animation = css `
 `
 
 const Wrapper = styled(WrapperStyled) `
-    margin: 0;
+    margin-bottom: 10vh;
     padding: 0;
+    height: fit-content;
 `
 
 const LargeHeadingContainer = styled.div `
