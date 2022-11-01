@@ -1,4 +1,20 @@
-import { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage } from "./ThirdProjectStyle"
+import {
+  ImageContainerProjects,
+  ImageProjects,
+  LinkContainerProjects,
+  LinkTextContainerProjects,
+  LinkTextViewProjects,
+  LinkTextAddressProjects,
+  IconProjects,
+  TechnologyImageProjects
+} from "../../components/ProjectsComponents"
+import {
+  Wrapper,
+  ImageDescriptionWrapper,
+  ImageText, Description,
+  LinksWrapper,
+  TechnologyImageContainer
+} from "./ThirdProjectStyle"
 import ukraine from "../../assets/ukraine.jpg"
 import github from "../../assets/icons/github.png"
 import githubpages from "../../assets/icons/githubpages.png"
@@ -8,41 +24,41 @@ const ThirdProject = () => {
   return (
     <Wrapper>
       <ImageDescriptionWrapper>
-        <ImageContainer>
+        <ImageContainerProjects>
           <ImageText>
             Safety in Ukraine
           </ImageText>
-          <Image src={ukraine} alt="image_safety" />
-        </ImageContainer>
+          <ImageProjects src={ukraine} alt="image_safety" />
+        </ImageContainerProjects>
         <Description>
           This is one of my first sites, made with pure HTML/ CSS/JS. Created for my work at Peace Corps
         </Description>
       </ImageDescriptionWrapper>
       <LinksWrapper>
-        <LinkContainer>
-          <IconImage src={github} alt="github_image" />
-          <LinkTextContainer>
-            <LinkTextView>
+        <LinkContainerProjects>
+          <IconProjects src={github} alt="github_image" />
+          <LinkTextContainerProjects>
+            <LinkTextViewProjects>
               View on GitHub
-            </LinkTextView>
-            <LinkTextAddress href="https://github.com/vikhulei/safety">
+            </LinkTextViewProjects>
+            <LinkTextAddressProjects href="https://github.com/vikhulei/safety">
               https://github.com/ vikhulei/ safety
-            </LinkTextAddress>
-          </LinkTextContainer>
-        </LinkContainer>
-        <LinkContainer>
-          <IconImage src={githubpages} alt="githubpages_image" />
-          <LinkTextContainer>
-            <LinkTextView>
+            </LinkTextAddressProjects>
+          </LinkTextContainerProjects>
+        </LinkContainerProjects>
+        <LinkContainerProjects>
+          <IconProjects src={githubpages} alt="githubpages_image" />
+          <LinkTextContainerProjects>
+            <LinkTextViewProjects>
               Run on GitHub Pages
-            </LinkTextView>
-            <LinkTextAddress href="https://vikhulei.github.io/safety/index.html">
+            </LinkTextViewProjects>
+            <LinkTextAddressProjects href="https://vikhulei.github.io/safety/index.html">
               https://vikhulei.github.io/ safety/ index.html
-            </LinkTextAddress>
-          </LinkTextContainer>
-        </LinkContainer>
+            </LinkTextAddressProjects>
+          </LinkTextContainerProjects>
+        </LinkContainerProjects>
         <TechnologyImageContainer>
-          <TechnologyImage src={html} alt="html_image" />
+          <TechnologyImageProjects src={html} alt="html_image" />
         </TechnologyImageContainer>
       </LinksWrapper>
     </Wrapper>

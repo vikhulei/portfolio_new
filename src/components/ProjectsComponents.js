@@ -68,7 +68,7 @@ const LinksWrapperProjects = styled.div `
         height: 50%;
         max-height: 300px;
         width: 100%;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
@@ -130,6 +130,7 @@ const IconProjects = styled.img `
 `
 
 const TechnologyImageContainerProjects = styled.div `
+    display: flex;
     height: 18%;
     align-self: center;
     @media screen and (max-width: 1100px) {

@@ -1,43 +1,29 @@
 import styled from "styled-components"
-import { WrapperStyled, RegularTextStyled, LinkContainerStyled, LinkTextContainerStyled, LinkTextViewStyled, LinkTextAddressStyled, LinkIconStyled } from "../../components/GeneralComponents"
+import {WrappedStyledProjects,
+    ImageDescriptionWrapperProjects,
+    DescriptionProjects,
+    LinksWrapperProjects,
+    TechnologyImageContainerProjects } from "../../components/ProjectsComponents"
 import { colors } from "../../components/Colors"
 
 const { light } = colors
 
-const Wrapper = styled(WrapperStyled)`
-    justify-content: space-between;
+const Wrapper = styled(WrappedStyledProjects)`
+    flex-direction: column;
     background-color: ${light};
-    padding: 50px 0;
     height: 900px;
-    margin-bottom: 0;
     @media screen and (max-width: 1100px) {
-        padding: 0 0 50px 0;
         height: fit-content;
-        border-radius: 20px;
-        justify-content: left;
     }
 `
 
-const ImageDescriptionWrapper = styled.div`
+const ImageDescriptionWrapper = styled(ImageDescriptionWrapperProjects) `
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+    height: fit-content;
+    flex-direction: row;
+    gap: 50px;
     @media screen and (max-width: 1100px) {
-        justify-content: left;
-        padding: 0;
         flex-direction: column;
-        margin-bottom: 50px;
-    }
-`
-
-const ImageContainer = styled.div`
-    position: relative;
-    width: 55%;
-    @media screen and (max-width: 1100px) {
-        width: 100%;
-        margin-bottom: 50px;
     }
 `
     
@@ -51,89 +37,28 @@ const ImageText = styled.p`
     font-style: italic;
 `
     
-const Image = styled.img`
-    width: 100%;
-    border-radius: 20px;
-    object-fit: contain;
-`
-    
-const Description = styled(RegularTextStyled)`
-    width: 35%;
+const Description = styled(DescriptionProjects)`
     text-align: right;
-    font-size: min(4.5vw, 2.3rem);
     @media screen and (max-width: 1100px) {
-        width: 90%;
         text-align: center;
     }  
 `
 
-const LinksWrapper = styled.div`
+const LinksWrapper = styled(LinksWrapperProjects)`
     height: 100px;
     width: 100%;
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     @media screen and (max-width: 1100px) {
         height: 45vh;
-        max-height: 300px;
-        width: 100%;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         padding: 20px;
-        border-radius: 0 0 20px 20px;
         background-color: transparent;
     }
-    `
-    // @media screen and (max-width: 1100px) {
-    //     height: 45vw;
-    //     max-height: 300px;
-    //     width: fit-content;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     padding: 0;
-    // }
-
-const LinkContainer = styled(LinkContainerStyled)`
-    @media screen and (max-width: 1100px) {
-        width: 100%;
-        margin-left: 25%;
-    }
-    @media screen and (max-width: 600px) {
-        margin-left: 15%;
-    }    
 `
-const LinkTextContainer = styled(LinkTextContainerStyled)`
+
+const TechnologyImageContainer = styled(TechnologyImageContainerProjects)`
     height: auto;
 `
 
-const LinkTextView = styled(LinkTextViewStyled)``
-    
-const LinkTextAddress = styled(LinkTextAddressStyled)``
-
-const IconImage = styled(LinkIconStyled)`
-    height: 100%;
-    @media screen and (max-width: 1100px) {
-        height: auto;
-        width: 60px;
-    }
-`
-
-const TechnologyImageContainer = styled.div`
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1100px) {
-        width: 170px;
-    }
-    @media screen and (max-width: 800px) {
-        align-self: center;
-    }
-`
-
-const TechnologyImage = styled.img`
-    width: 100%;
-`
-
-
-export { Wrapper, ImageDescriptionWrapper, ImageContainer, ImageText, Image, Description, LinksWrapper, LinkContainer, LinkTextContainer, LinkTextView, LinkTextAddress, IconImage, TechnologyImageContainer, TechnologyImage }
+export { Wrapper, ImageDescriptionWrapper, ImageText, Description, LinksWrapper, TechnologyImageContainer }
