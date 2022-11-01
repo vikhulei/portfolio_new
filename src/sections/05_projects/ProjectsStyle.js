@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { WrapperStyled, LargeHeadingStyled, RegularTextStyled } from "../../components/GeneralComponents"
 
 const Wrapper = styled(WrapperStyled) `
+    padding: 0;
     height: 400px;
     justify-content: space-between;
     @media screen and (max-width: 800px) {
