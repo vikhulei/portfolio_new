@@ -1,5 +1,15 @@
 import { useState, useEffect, useRef } from "react"
-import { Wrapper, ImagesWrapper, LeftImage, TopImage, BottomImage, Image, IconsWrapper, IconContainer, Icon } from "./TechsStyle"
+import {
+  Wrapper,
+  ImagesWrapper,
+  LeftImage,
+  TopImage,
+  BottomImage,
+  Image,
+  IconsWrapper,
+  IconContainer,
+  Icon
+} from "./TechsStyle"
 import notebook from "../../assets/notebook.jpg"
 import code from "../../assets/code.jpg"
 import react from "../../assets/react.jpg"

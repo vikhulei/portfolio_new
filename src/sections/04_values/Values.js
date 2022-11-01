@@ -1,7 +1,18 @@
-import {useState, useEffect, useRef} from "react"
-import {Wrapper, Heading, ValuesWrapper, ValueContainer, ValueNameContainer, ValueNumber, ValueName, ValueText, ValuesImageContainer, ValuesImage} from "./ValuesStyle"
+import { useState, useEffect, useRef } from "react"
+import {
+  Wrapper,
+  Heading,
+  ValuesWrapper,
+  ValueContainer,
+  ValueNameContainer,
+  ValueNumber,
+  ValueName,
+  ValueText,
+  ValuesImageContainer,
+  ValuesImage
+} from "./ValuesStyle"
 import values from "../../assets/values.png"
-import {showingPointFunction} from "../../util/showingPointFunction"
+import { showingPointFunction } from "../../util/showingPointFunction"
 
 
 const Values = () => {

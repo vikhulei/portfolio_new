@@ -1,4 +1,5 @@
-import { ImageDescriptionWrapperProjects,
+import {
+  ImageDescriptionWrapperProjects,
   ImageContainerProjects,
   ImageProjects,
   DescriptionProjects,
@@ -8,7 +9,8 @@ import { ImageDescriptionWrapperProjects,
   LinkTextAddressProjects,
   IconProjects,
   TechnologyImageContainerProjects,
-  TechnologyImageProjects } from "../../components/ProjectsComponents"
+  TechnologyImageProjects
+} from "../../components/ProjectsComponents"
 import { Wrapper, LinksWrapper } from "./FirstProjectStyle"
 import contactStore from "../../assets/contactStore.jpg"
 import github from "../../assets/icons/github.png"

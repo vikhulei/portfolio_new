@@ -1,4 +1,16 @@
-import { Wrapper, AnimationWrapper, ImageNameWrapper, MyImageContainer, MyImage, MyName, LargeHeadingHome, MainTextHome, ButtonEmailWrapper, ButtonHome, EmailHome } from "./HomeStyle"
+import {
+    Wrapper,
+    AnimationWrapper,
+    ImageNameWrapper,
+    MyImageContainer,
+    MyImage,
+    MyName,
+    LargeHeadingHome,
+    MainTextHome,
+    ButtonEmailWrapper,
+    ButtonHome,
+    EmailHome
+} from "./HomeStyle"
 import myImage from "../../assets/myImageHome.png"
 
 

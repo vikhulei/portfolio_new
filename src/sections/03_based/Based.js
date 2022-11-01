@@ -1,5 +1,13 @@
 import {useState, useEffect, useRef} from "react"
-import { Wrapper, Heading, RegularText, EquimpentImageContainer, EquimpentImage, MyImageContainer, MyImage } from "./BasedStyle"
+import {
+    Wrapper,
+    Heading,
+    RegularText,
+    EquimpentImageContainer,
+    EquimpentImage,
+    MyImageContainer,
+    MyImage
+} from "./BasedStyle"
 import myImage from "../../assets/myImageBased.png"
 import equipment from "../../assets/equipment.png"
 import { showingPointFunction } from "../../util/showingPointFunction"
