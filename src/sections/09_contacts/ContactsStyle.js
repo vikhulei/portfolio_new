@@ -15,29 +15,24 @@ const Animation = css `
 
 const Wrapper = styled(WrapperStyled) `
     margin: 0;
-    height: fit-content;
-    justify-content: space-between;
+    padding: 0;
 `
 
 const LargeHeadingContainer = styled.div `
     position: relative;
-    padding: 0;
-    display: flex;
-    margin: 50px 0;
+    margin-bottom: 100px;
     @media (max-width: 800px) {
-        margin: 30px 0;
+        margin-bottom: 50px;
     }
 `
 
 const LargeHeading = styled(LargeHeadingStyled) `
     margin: 0;
     padding: 0;
+    font-size: min(10vw, 8rem);
     transition: 2s;
     visibility: ${(({showAnimation}) => showAnimation ? "visible" : "hidden")};
     ${(({showAnimation}) => showAnimation ? Animation : "")};
-    @media screen and (max-width: 1100px) {
-        // margin-bottom: 50px;
-    }
 `
 
 const Footer = styled.div `
@@ -52,12 +47,8 @@ const Footer = styled.div `
     background-color: ${middle};
     @media screen and (max-width: 1100px) {
         flex-direction: column;
-        height: 220px;
+        height: 250px;
         padding: 5% 80px;
-        // margin-top: 150px;
-    }
-    @media screen and (max-width: 1100px) {
-        // margin-top: 100px;
     }
 `
 
@@ -85,6 +76,5 @@ const ContactsContainer = styled.div `
 const PhoneNumber = styled.p ``
 
 const EmailAddress = styled.a ``
-
 
 export { Wrapper, LargeHeadingContainer, LargeHeading, Footer, CopyrightNameContainer, CopyrightText, NameText, PortfolioContainer, CheckPortfolioText, PortfolioAddress, ContactsContainer, PhoneNumber, EmailAddress }
