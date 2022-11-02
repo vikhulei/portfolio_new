@@ -22,10 +22,10 @@ const Contacts = () => {
   return (
     <Wrapper>
       <LargeHeadingContainer>
-      <LargeHeading
-        ref={touchRef}
-        showAnimation={showAnimation}
-      >Let’s get in touch!</LargeHeading>
+        <LargeHeading
+          ref={touchRef}
+          showAnimation={showAnimation}
+        >Let’s get in touch!</LargeHeading>
       </LargeHeadingContainer>
       <Footer>
         <CopyrightNameContainer>

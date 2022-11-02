@@ -26,11 +26,11 @@ const Based = () => {
                 Have experience of solo working as well as in teams in my previous roles
             </RegularText>
             <EquimpentImageContainer
-            showAnimation={showAnimation}
-            ref={equipmentRef}
+                showAnimation={showAnimation}
+                ref={equipmentRef}
             >
                 <EquimpentImage
-                src={equipment} alt="equipment"
+                    src={equipment} alt="equipment"
                 />
             </EquimpentImageContainer>
             <MyImageContainer>

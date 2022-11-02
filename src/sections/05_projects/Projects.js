@@ -7,7 +7,7 @@ const Projects = () => {
         Projects
       </LargeHeading>
       <RegularText>
-      Let’s look at some of my projects. You may review the code on GitHub or run them on Surge platform
+        Let’s look at some of my projects. You may review the code on GitHub or run them on Surge platform
       </RegularText>
     </Wrapper>
   )

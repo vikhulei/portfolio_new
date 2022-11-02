@@ -46,41 +46,41 @@ const Techs = () => {
       <IconsWrapper
         showIcons={showAnimation}
         ref={iconsRef}
-        >
+      >
         <IconContainer
         >
           <Icon
-          src={html}
-          style={{"rotate": "-10deg"}}
+            src={html}
+            style={{ "rotate": "-10deg" }}
           />
         </IconContainer>
         <IconContainer>
           <Icon
-          src={axios}
-          style={{"rotate": "25deg"}}
+            src={axios}
+            style={{ "rotate": "25deg" }}
           />
         </IconContainer>
         <IconContainer>
           <Icon
-          src={figma}
-          style={{"rotate": "-15deg"}}
+            src={figma}
+            style={{ "rotate": "-15deg" }}
           />
         </IconContainer>
         <IconContainer>
           <Icon
-          src={styled}
+            src={styled}
           />
         </IconContainer>
         <IconContainer>
           <Icon
-          src={git}
-          style={{"rotate": "-25deg"}}
+            src={git}
+            style={{ "rotate": "-25deg" }}
           />
         </IconContainer>
         <IconContainer>
           <Icon
-          src={redux}
-          style={{"rotate": "10deg"}}
+            src={redux}
+            style={{ "rotate": "10deg" }}
           />
         </IconContainer>
       </IconsWrapper>

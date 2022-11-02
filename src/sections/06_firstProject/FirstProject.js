@@ -25,10 +25,9 @@ const FirstProject = () => {
           <ImageProjects src={contactStore} alt="image_safety" />
         </ImageContainerProjects>
         <DescriptionProjects>
-        This is contact management application with authentication and the options to view, create, update and delete the contacts. The password is <em>Pa$$word</em>, of course &#128513;
+          This is contact management application with authentication and the options to view, create, update and delete the contacts. The password is <em>Pa$$word</em>, of course &#128513;
         </DescriptionProjects>
       </ImageDescriptionWrapperProjects>
-
       <LinksWrapper>
         <LinkContainerProjects>
           <IconProjects src={github} alt="github_image" />
@@ -37,7 +36,7 @@ const FirstProject = () => {
               View on GitHub
             </LinkTextViewProjects>
             <LinkTextAddressProjects href="https://github.com/vikhulei/contact_store_v2">
-            https://github.com/ vikhulei/ contact_store_v2
+              https://github.com/ vikhulei/ contact_store_v2
             </LinkTextAddressProjects>
           </LinkTextContainerProjects>
         </LinkContainerProjects>
@@ -48,7 +47,7 @@ const FirstProject = () => {
               Run on Surge platform
             </LinkTextViewProjects>
             <LinkTextAddressProjects href="http://contactstore.surge.sh/">
-            http://contactstore. surge. sh
+              http://contactstore. surge. sh
             </LinkTextAddressProjects>
           </LinkTextContainerProjects>
         </LinkContainerProjects>

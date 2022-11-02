@@ -11,7 +11,7 @@ import Contacts from "./sections/09_contacts/Contacts"
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">
       <Home />
       <Techs />
       <Based />

@@ -11,9 +11,7 @@ import {
   TechnologyImageContainerProjects,
   TechnologyImageProjects
 } from "../../components/ProjectsComponents"
-
 import { Wrapper, LinksWrapper } from "./SecondProjectStyle"
-
 import church from "../../assets/church.jpg"
 import github from "../../assets/icons/github.png"
 import surge from "../../assets/icons/surge.png"
