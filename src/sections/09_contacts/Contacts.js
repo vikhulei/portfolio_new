@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useRef } from "react"
 import {
   Wrapper,
   LargeHeadingContainer,
@@ -14,28 +14,11 @@ import {
   PhoneNumber,
   EmailAddress
 } from "./ContactsStyle"
-import { showingPointFunction } from "../../util/showingPointFunction"
+import useAnimation from "../../util/useAnimation"
 
 const Contacts = () => {
-
-  const [showAnimation, setShowAnimation] = useState(false)
-
   const touchRef = useRef(null)
-
-  const { showingPoint, elementTop } = showingPointFunction
-
-  const animateTouch = () => {
-    const touchPosition = elementTop(touchRef.current)
-    if (touchPosition < showingPoint()) {
-      setShowAnimation(!showAnimation)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", animateTouch)
-    return () => window.removeEventListener("scroll", animateTouch)
-  }, [])
-
+  const showAnimation = useAnimation(touchRef)
   return (
     <Wrapper>
       <LargeHeadingContainer>

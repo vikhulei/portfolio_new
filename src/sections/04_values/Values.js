@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useRef } from "react"
 import {
   Wrapper,
   Heading,
@@ -12,29 +12,11 @@ import {
   ValuesImage
 } from "./ValuesStyle"
 import values from "../../assets/values.png"
-import { showingPointFunction } from "../../util/showingPointFunction"
-
+import useAnimation from "../../util/useAnimation"
 
 const Values = () => {
-
-  const [showAnimation, setShowAnimation] = useState(false)
-  
   const handRef = useRef(null)
-
-  const {showingPoint, elementTop} = showingPointFunction
-
-  const animateHand = () => {
-    const handPosition = elementTop(handRef.current)
-    if(handPosition < showingPoint()) {
-      setShowAnimation(true)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", animateHand)
-    return () => window.removeEventListener("scroll", animateHand)
-  }, [])
-
+  const showAnimation = useAnimation(handRef)
   return (
     <Wrapper>
       <Heading>My values</Heading>

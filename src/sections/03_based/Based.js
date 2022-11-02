@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from "react"
+import { useRef } from "react"
 import {
     Wrapper,
     Heading,
@@ -10,30 +10,12 @@ import {
 } from "./BasedStyle"
 import myImage from "../../assets/myImageBased.png"
 import equipment from "../../assets/equipment.png"
-import { showingPointFunction } from "../../util/showingPointFunction"
+import useAnimation from "../../util/useAnimation"
 
 
 const Based = () => {
-    const [showAnimation, setShowAnimation] = useState(false)
-
     const equipmentRef = useRef(null)
-
-    const {showingPoint, elementTop} = showingPointFunction
-
-    const animateEquipment = () => {
-        const equipmentPosition = elementTop(equipmentRef.current)
-        if(equipmentPosition < showingPoint()) {
-            setShowAnimation(true)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener(
-            "scroll", animateEquipment
-        )
-        return () => window.removeEventListener("scroll", animateEquipment)
-    }, [])
-
+    const showAnimation = useAnimation(equipmentRef)
     return (
         <Wrapper>
             <Heading>

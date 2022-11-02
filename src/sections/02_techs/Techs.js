@@ -19,28 +19,11 @@ import git from "../../assets/icons/git.png"
 import html from "../../assets/icons/html.png"
 import redux from "../../assets/icons/redux.png"
 import styled from "../../assets/icons/styled.png"
-import { showingPointFunction } from "../../util/showingPointFunction"
+import useAnimation from "../../util/useAnimation"
 
 const Techs = () => {
-
-  const [showAnimation, setShowAnimation] = useState(false)
-
   const iconsRef = useRef(null)
-  
-  const {showingPoint, elementTop} = showingPointFunction
-  
-  const animateIcons = () => {
-    const iconsPos = elementTop(iconsRef.current)
-    if (iconsPos < showingPoint()) {
-      setShowAnimation(true)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", animateIcons)
-    return () => window.removeEventListener("scroll", animateIcons)
-  }, [])
-
+  const showAnimation = useAnimation(iconsRef)
   return (
     <Wrapper>
       <ImagesWrapper>
